@@ -1,0 +1,42 @@
+{
+    "version": "0.1",
+    "name": "B-CS Kyberbezpečnost - 2022/2023",
+    "groups": [
+        {
+            "id": 0,
+            "name": "bez názvu",
+            "condition": "alespoň 1 z 2 předmětů/podmínek"
+        },
+        {
+            "id": 1,
+            "name": "Programování",
+            "condition": "alespoň 1 z 3 předmětů/podmínek"
+        }
+    ],
+    "subjects": [
+        {
+            "faculty": "FI",
+            "code": "PV080",
+            "name": "Information security and cryptography",
+            "credits": 3,
+            "rozsah": "2\/2"
+        },
+        {
+            "faculty": "PrF",
+            "code": "BI301K",
+            "name": "Úvod do práva ICT II",
+            "credits": 4,
+            "rozsah": "2\/1\/0",
+            "prerequisutes": "!obor(PR) && !obor(PR01) && !program(N-VS)"
+        },
+        {
+            "group": 1,
+            "faculty": "FI",
+            "code": "PB112",
+            "name": "Základy objektově orientovaného programování v jazyce Java",
+            "credits": 3,
+            "rozsah": "2\/2\/0",
+            "prerequisutes": "!(PB162) && ! NOW(PB162)"
+        }
+    ]
+}

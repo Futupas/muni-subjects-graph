@@ -1,0 +1,87 @@
+[
+    {
+      "name": "bez názvu alespoň 1 z 2 předmětů/podmínek\n",
+      "nameBald": "bez názvu",
+      "nameRegular": "alespoň 1 z 2 předmětů/podmínek",
+      "table": [
+        {
+          "název": "Základy programování",
+          "garant": "N. Beneš",
+          "vyučující": "N. Beneš",
+          "ukon.": "zk",
+          "rozsah": "2/2/2",
+          "kred.": "5 (plus ukončení)",
+          "semestr": "",
+          "prerekvizity": "!IB113 && !NOW(IB113)",
+          "poznámka": ""
+        },
+        {
+          "název": "Úvod do programování a algoritmizace",
+          "garant": "R. Pelánek",
+          "vyučující": "R. Pelánek",
+          "ukon.": "zk",
+          "rozsah": "2/2/1",
+          "kred.": "4 (plus ukončení)",
+          "semestr": "",
+          "prerekvizity": "!NOW(IB111) && !IB111 && !PB162 && !PB161 && !PB071 && !IB001 && !program(B-INF) && !program(B-PVA)",
+          "poznámka": ""
+        }
+      ]
+    },
+    {
+      "name": null,
+      "table": [
+        {
+          "název": "Úvod do programování a algoritmizace II",
+          "garant": "I. Černá",
+          "vyučující": "I. Černá",
+          "ukon.": "zk",
+          "rozsah": "2/1/0",
+          "kred.": "3 (plus ukončení)",
+          "semestr": "",
+          "prerekvizity": "(IB111 || IB113) && !IB002 && !NOW(IB002)",
+          "poznámka": ""
+        },
+        {
+          "název": "Přínosy a rizika inteligentních systémů",
+          "garant": "J. Zlatuška",
+          "vyučující": "J. Zlatuška",
+          "ukon.": "zk",
+          "rozsah": "2/0/0",
+          "kred.": "2 (plus ukončení)",
+          "semestr": "",
+          "prerekvizity": "",
+          "poznámka": ""
+        }
+      ]
+    },
+    {
+      "name": "Operační systémy alespoň 6 kr.\n",
+      "nameBald": "Operační systémy",
+      "nameRegular": "alespoň 6 kr.",
+      "table": [
+        {
+          "název": "Operační systémy",
+          "garant": "P. Ročkai",
+          "vyučující": "P. Ročkai",
+          "ukon.": "z",
+          "rozsah": "2/0/0",
+          "kred.": "2 (plus ukončení)",
+          "semestr": "",
+          "prerekvizity": "!PB153 && !NOW(PB153)",
+          "poznámka": ""
+        },
+        {
+          "název": "Operační systémy - cvičení",
+          "garant": "P. Ročkai",
+          "vyučující": "A. Matoušek, P. Ročkai",
+          "ukon.": "k",
+          "rozsah": "0/2/1",
+          "kred.": "3 (plus ukončení)",
+          "semestr": "",
+          "prerekvizity": "(PB153 || PB152) && (PB071 || SOUHLAS)",
+          "poznámka": ""
+        }
+      ]
+    }
+]
