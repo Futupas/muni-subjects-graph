@@ -1,6 +1,8 @@
 # MUNI Subjects graph
 
-This is a project to create a graph of subjects at MUNI (some of them depend on others), and show it to make study easier
+This is a project to create a graph of subjects at MUNI (some of them depend on others), and show it to make study easier.
+
+Source: https://is.muni.cz/predmety/sablony_tisk?fakulta=1433;obdobi=9224;uzel=2592713;rek=a
 
 
 
