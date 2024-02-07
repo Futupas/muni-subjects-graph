@@ -1,0 +1,103 @@
+[
+    {
+        "src": "",
+        "value": {}
+    },
+    {
+        "src": "!IB005 || !IB107",
+        "value": {
+            "modifier": "or",
+            "values": [
+                {
+                    "code": "IB005",
+                    "not": true,
+                    "now": false
+                },
+                {
+                    "code": "IB005",
+                    "not": true,
+                    "now": false
+                }
+            ]
+        }
+    },
+    {
+        "src": "!IB113 && !NOW(IB113)",
+        "value": {
+            "modifier": "and",
+            "values": [
+                {
+                    "code": "IB113",
+                    "not": true,
+                    "now": false
+                },
+                {
+                    "code": "IB113",
+                    "not": true,
+                    "now": true
+                }
+            ]
+        }
+    },
+    {
+        "src": "(IB111 || IB113) && !IB002 && !NOW(IB002)",
+        "value": {
+            "modifier": "and",
+            "values": [
+                {
+                    "code": "IB002",
+                    "not": true,
+                    "now": false
+                },
+                {
+                    "code": "IB002",
+                    "not": true,
+                    "now": true
+                },
+                {
+                    "modifier": "or",
+                    "values": [
+                        {
+                            "code": "IB111",
+                            "not": false,
+                            "now": false
+                        },
+                        {
+                            "code": "IB113",
+                            "not": false,
+                            "now": false
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "src": "(!rocnik(1) && !rocnik(2)) && SOUHLAS",
+        "value": {
+            "modifier": "and",
+            "values": [
+                {
+                    "requirement": "SOUHLAS",
+                    "not": false,
+                    "now": false
+                },
+                {
+                    "modifier": "and",
+                    "values": [
+                        {
+                            "requirement": "rocnik(1)",
+                            "not": true,
+                            "now": false
+                        },
+                        {
+                            "code": "rocnik(2)",
+                            "not": true,
+                            "now": false
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]
