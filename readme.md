@@ -34,7 +34,7 @@ Source: https://is.muni.cz/predmety/sablony_tisk?fakulta=1433;obdobi=9224;uzel=2
 
 
 
-## Branches:
+## Branches
 
 1. **master** - Main branch. Don't push your code here with no approval and no preparations
 1. **parse-json** - raw JSON to processed JSON
