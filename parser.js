@@ -34,12 +34,22 @@
             table.push(row);
         }
 
-        blocks.push({
+        const block = {
             name: blockName,
             tableEl: elements[i],
             prevEl: prevElement,
             table
-        });
+        };
+
+        const baldText = blockName && prevElement?.querySelector('b')?.innerText.trim();
+        if (baldText) {
+            /** @type {string} */ const allText = prevElement.innerText.trim();
+            const regularText = allText.substring(baldText.length).trim();
+            block.nameBald = baldText;
+            block.nameRegular = regularText;
+        }
+
+        blocks.push(block);
         
     }
 
