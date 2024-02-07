@@ -1,0 +1,805 @@
+  * html #DSearch { 
+    background: #F7F8FC url('/pics/design/14/b/hledani-div.png') 0 0 no-repeat;
+  }
+
+  * html #FAQico {
+    /* background: #F7F8FC url('/pics/design/14/b/hledani-faq.png') 0 0 no-repeat; */
+  }
+
+.inverzne { background-color: #e9e9e9; }
+
+/* rozmisteni */
+div#obsah {
+  // float: left;
+  max-width: 1200px;
+  margin: auto;
+}
+  * html div#obsah { width: auto; } /* posun menu */
+div#aplikace {
+  margin-left: 122px;
+  padding: 12px 0;
+  padding-left: 7px;
+  padding-right: 5px;
+}
+  * html div#aplikace { width: 100%; }
+div#menu {
+  float: left;
+  width: 122px;
+  margin-left: -100%;
+  padding: 0.8em 0;
+}
+
+/* min-width */
+#o2 { position: relative; width: 100%; min-width: 905px; }
+#obalka { display: block; }
+* html #o2 { border-right: 905px solid #F7F8FC; }
+* html #obalka { float: left; position: relative; margin-right: -905px; }
+
+/* vzhled */
+html, body {
+/*  background-color: #F7F8FC;  */
+  color: #000;
+  margin: 0; padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-width: normal;
+}
+
+#obalka {
+  /* border-top: 5px solid #002776; */
+  /* background: transparent url('/pics/design/14/b/paticka-pruh.png') 33px 100% repeat-y; */
+  /*background: transparent url('/pics/design/14/b/kc.png') 33px 100% repeat-y;*/
+  /* centrovani */
+}
+  #obalka.ep { background-image: url('/pics/design/14/b/paticka-pruh-ep.png'); }
+  #obalka.el { background-image: url('/pics/design/14/b/paticka-pruh-el.png'); }
+  #obalka.oc { background-image: url('/pics/design/14/b/paticka-pruh-oc.png'); }
+
+  /*#obalka.ep { background-image: url('/pics/design/14/b/kc-ep.png'); }
+  #obalka.el { background-image: url('/pics/design/14/b/kc-el.png'); }
+  #obalka.oc { background-image: url('/pics/design/14/b/kc-oc.png'); }*/
+
+.pristupnost {
+  position: absolute;
+  left: -100em;
+  top: -100em;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+  * html #hlavicka { height: 11.8em; }
+
+  #hlavicka #logo {
+    position: absolute;
+    /* height: 10.8em;
+    min-height: 140px; */
+    /* width: 400px;
+    background: transparent url('/pics/design/14/b/logo.png') 0 0 no-repeat;
+    background-repeat: no-repeat; */
+  }
+    /* 21. 12. 2009
+    .ep #hlavicka #logo { background-image: url('/pics/design/14/b/logo-ep.png'); }
+    .el #hlavicka #logo { background-image: url('/pics/design/14/b/logo-el.png'); }
+    .oc #hlavicka #logo { background-image: url('/pics/design/14/b/logo-oc.png'); }*/
+
+  #hlavicka #logo img {
+    position: relative;
+    top: 17px; /* pytel! */
+    left: 28px;
+    border: none;
+    z-index: 5;
+  }
+
+  #hlavicka #nadpis-drobecky { position: relative; }
+
+  #hlavicka h1, #hlavicka h2 {
+    color: #002776;
+    position: absolute;
+    left: 148px;
+    margin: 0;
+  }
+  #hlavicka h1 {
+    top: 75px;
+    font-size: 20px;
+    line-height: 1.1em;
+    height: 2.2em;
+    overflow: hidden;
+    margin-right: 300px;
+  }
+  #hlavicka h2 a { text-decoration: none; }
+  
+  #hlavicka h2 {
+    top: 55px;
+    width: 319px;
+    height: 17px;
+    font-size: 15px;
+    overflow: hidden;
+  }
+    #hlavicka h2 span {
+      display: block;
+      width: 319px;
+      height: 18px;
+      position: absolute; left: 0; top: 0; z-index: 1;
+      background: transparent url('/pics/design/14/b/nadpis/h2-ismu.png') 0 0 no-repeat;
+    }
+    .en #hlavicka h2 { width: 310px; }
+    .en #hlavicka h2 span { background-image: url('/pics/design/14/b/nadpis/h2-ismu-en.png'); }
+    .ep #hlavicka h2 { width: 100px; }
+    .ep #hlavicka h2 span { background-image: url('/pics/design/14/b/nadpis/h2-e-prihlaska.png'); }
+    .en .ep #hlavicka h2 { width: 110px; }
+    .en .ep #hlavicka h2 span { background-image: url('/pics/design/14/b/nadpis/h2-e-prihlaska-en.png'); }
+    .el #hlavicka h2 { width: 75px; }
+    .el #hlavicka h2 span { background-image: url('/pics/design/14/b/nadpis/h2-elportal.png'); }
+    .is #hlavicka h2 { width: 90px; }
+    .is #hlavicka h2 span { background-image: url('/pics/design/14/b/nadpis/h2-nas-system.png'); }
+    .en .is #hlavicka h2 { width: 150px; }
+    .en .is #hlavicka h2 span { background-image: url('/pics/design/14/b/nadpis/h2-nas-system-en.png'); }
+    .oc #hlavicka h2 { width: 180px; }
+    .oc #hlavicka h2 span { background-image: url('/pics/design/14/b/nadpis/h2-obchod.png'); }
+    .en .oc #hlavicka h2 { width: 150px; }
+    .en .oc #hlavicka h2 span { background-image: url('/pics/design/14/b/nadpis/h2-obchod-en.png'); }
+  
+  #hlavicka .drobecky {
+    position: absolute;
+    left: 138px;
+    top: 10.3em; /*120px*/
+    margin-right: 300px;
+  }
+
+  #identita {
+    position: relative; /*JS menu*/
+    float: right;
+    /* position: absolute; right: 0; */
+    font-size: 0.9em;
+    width: 290px; /* 253 */
+    line-height: 1.7em;
+    padding-right: 5px;
+    z-index: 100; /* 10 */
+  }
+  * html #identita { width: 258px; }
+    #id-obdobi, #id-fakulta, #id-studium {
+      margin-top: 0px;
+      padding: 3px 0;
+      margin-left: 37px;
+    }
+    /*#id-studium { line-height: 1.4em; }*/
+    #id-obdobi b, #id-fakulta b, #id-studium span {
+      cursor: pointer;
+    }
+    #identita img {
+      border: none;
+      float: left;
+      margin: 0.2em 0 0 7px;
+      cursor: pointer;
+    }
+      #identita img.vsechna_studia { cursor: auto; }
+
+  #identita #ikona { top: 55px; }
+    .ep #ikona { background: transparent url('/pics/design/14/b/ico/id-e-prihlaska.png') 0 0 no-repeat; }
+    .el #ikona { background: transparent url('/pics/design/14/b/ico/id-elportal.png') 0 0 no-repeat; }
+    .oc #ikona { display: none; }
+    /* background: transparent url('/pics/design/14/b/ico/id-obchod.png') 0 0 no-repeat; */
+    .is #ikona { background: transparent url('/pics/design/14/b/ico/id-is.png') 0 0 no-repeat; }
+
+    #id-jazyk {
+      /*float: right;*/
+      text-align: center;
+      width: 200px;
+      color: #fff;
+      background: #002776 url('/pics/design/14/b/jazyk.png') top right no-repeat;
+      margin-left: 20px; /* 5 */
+    }
+      * html #id-jazyk { float: none; }
+      #id-jazyk p {
+        margin: 0;
+        padding: 0;
+        height: 25px;
+        background: transparent url('/pics/design/14/b/jazyk-p.png') 0 0 no-repeat;
+      }
+      #id-jazyk a { color: #b7d6ff; }
+    
+    #id-odhlaseni {
+      width: 44px; height: 27px;
+      background: #002776 url('/pics/design/14/b/odhlaseni.png') 0 0 no-repeat;;
+      float: right;
+      margin-top: -27px;
+      text-align: center;
+    }
+      #id-odhlaseni a {
+        display: block;
+        margin-top: 6px;
+      }
+      #id-odhlaseni img { margin: 0; float: none; }
+    
+    #id-uzivatel {
+      clear: right;
+      background: transparent url('/pics/design/14/b/hr.png') bottom left repeat-x;
+      padding: 12px 0px 6px 0px;
+      margin-left: 37px;
+      line-height: 1.4em;
+    }
+
+#meta {
+  float: right;
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+  /*text-align: right;*/
+}
+  #meta img {
+    border: none;
+    /*margin-right: 3px;*//**/
+    margin-bottom: 0px;
+    cursor: pointer;
+  }
+  * html #meta img { margin-bottom: 4px; }
+
+/*#meta img { float: right; }
+
+  #meta a {
+    display: block;
+    float: right;
+    width: 22px;
+    height: 22px;
+    margin-right: 0.2em;
+    overflow: hidden;
+    background: transparent url('/pics/design/14/b/ico/help.png') 0 0 no-repeat;
+    text-indent: 999em;
+  }*/
+
+#menu {
+  color: #666;
+  background-color: #F7F8FC;
+  text-align: right;
+  font-weight: bold;
+}
+  #menu a { text-decoration: none; }
+  #menu p { margin: 0 5px; }
+  #menu ul {
+    /*margin: 0 5px 10px 3px;*/
+    margin: 0 5px 5px 3px;
+    padding: 0 0 3px 0; /*10px*/
+    /*background: transparent url('/pics/design/14/b/hr.png') left bottom repeat-x;*/
+  }
+  #menu ul li {
+    background: none;
+    padding-left: 0;
+	padding-bottom: 2px;
+  }
+  #menu li.aktivni {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    margin: 5px 0;
+    padding: 5px 5px 5px 0;
+  }
+    #menu li.aktivni a { color: #ce3e1f; }
+  #menu label { color: #000; }
+
+hr {
+  clear: both;
+  height: 2px;
+  border: none;
+  background: #eee url('/pics/design/14/b/hr.png') 0 0 repeat-x;
+}
+
+#abs_pat {
+  clear: both;
+  border-top: 1px solid #D4D4D4;
+  background-color: #fff;
+  padding-left: 128px;
+  padding-bottom: 1px;
+}
+  #abs_pat p { margin: 5px 0; }
+  #abs_pat span { display: block; width: 25em; float: left; clear: left; /*margin: 0;*/ }
+
+#paticka {
+	clear: both;
+	padding-top: 2px;
+	/*background: #fff url('/pics/design/14/b/paticka.png') 0 0 repeat-x;*/
+}
+#paticka h3 {
+	margin: 0;
+	font-size: 1.1em;
+}
+  #paticka ul { margin: 0.3em 13px; }
+  #paticka hr { margin-left: 25px; }
+  #paticka-obsah {
+    padding-left: 128px;
+    padding-top: 5px;
+    padding-bottom: .8em;
+    /*background: transparent url('/pics/design/14/b/kc-paticka.png') 33px 0 repeat-y;*/
+    background: transparent url('/pics/design/14/b/paticka-pruh.png') 33px 0 repeat-y;
+  }
+    * html .ep #paticka-obsah { width: 100%; }
+    .ep #paticka-obsah { background-image: url('/pics/design/14/b/paticka-pruh-ep.png'); }
+    .el #paticka-obsah { background-image: url('/pics/design/14/b/paticka-pruh-el.png'); }
+    .oc #paticka-obsah { background-image: url('/pics/design/14/b/paticka-pruh-oc.png'); }
+
+    /* 21. 12. 2009
+    .ep #paticka-obsah { background-image: url('/pics/design/14/b/kc-paticka-ep.png'); }
+    .el #paticka-obsah { background-image: url('/pics/design/14/b/kc-paticka-el.png'); }
+    .oc #paticka-obsah { background-image: url('/pics/design/14/b/kc-paticka-oc.png'); }*/
+    
+  #paticka-obsah-x { padding: .8em 5px .8em 7px; }
+
+  #odkazy-rel {
+    float: left;
+    width: 48%;
+  }
+  #odkazy-rel h3 {
+    position: relative;
+    overflow: hidden;
+    /*padding-bottom: 1px; /* TODO */
+    font-family: Roboto, Helvetica, Arial, sans-serif !important;
+    font-weight: 500;
+    font-size: 1.35rem;
+    color: #029123;
+  }
+    #odkazy-rel h3 span {
+      display: block;
+      width: 166px; height: 20px;
+      position: absolute; left: 0; top: 0; z-index: 1;
+      background: transparent url('/pics/design/14/b/nadpis/odkazy-rel.png') 0 0 no-repeat;
+    }
+    .en #odkazy-rel h3 span { background-image: url('/pics/design/14/b/nadpis/odkazy-rel-en.png'); }
+
+  #odkazy-rel li {
+    position: relative;
+  }
+  #odkazy-rel li::before {
+    position: absolute;
+    content: "▪";
+    font-size: 1.5rem;
+    left: -0.8em;
+    top: -7px;
+  }
+
+  #odkazy-vlastni {
+    float: left;
+    width: 48%;
+  }
+  #odkazy-vlastni li {
+    margin-bottom: 2px;
+    color: gray;
+  }
+  #odkazy-vlastni li img { vertical-align: middle; }
+  #odkazy-vlastni p {
+    font-size: 0.89em;
+    margin-left: 26px;
+  }
+  * html #odkazy-vlastni p { font-size: 0.85em; }  
+
+  #odkazy-vlastni h3 {
+    position: relative;
+    width: 157px; height: 20px;
+    overflow: hidden;
+  }
+    #odkazy-vlastni h3 span {
+      display: block;
+      width: 157px; height: 20px;
+      position: absolute; left: 0; top: 0; z-index: 1;
+      background: transparent url('/pics/design/14/b/nadpis/oblibene-zalozky.png') 0 0 no-repeat;
+    }
+    .en #odkazy-vlastni h3, .en #odkazy-vlastni h3 span { width: 200px; } 
+    .en #odkazy-vlastni h3 span { background-image: url('/pics/design/14/b/nadpis/oblibene-zalozky-en.png'); }
+
+a.nahoru {
+  padding-left: 25px;
+  margin-right: 0.3em;
+  background: transparent url('/pics/design/14/b/ico/nahoru.png') 0 0 no-repeat;
+  display: block;
+  height: 20px;
+  float: left;
+}
+  * html a.nahoru { position: relative; top: 2px; }
+
+p#kontakty { margin-left: 25px; }
+
+.drobecky {
+  background: transparent url('/pics/design/14/b/li.png') 0 0.5em no-repeat;
+  font-size: 0.89em;
+  padding-left: 10px;
+}
+  * html .drobecky { font-size: 0.85em; }
+
+/* odkazy */
+a {
+  line-height: inherit;
+  color: #002776;
+  text-decoration: none;
+  cursor: pointer; }
+  a:hover, a:focus {
+    color: #002265;
+    text-decoration: underline; }
+  a img {
+    border: 0; }
+/*
+a { color: #002776; }
+  a:visited { color: #0D46AF; }
+  a:active { color: #FF0000; }
+  a:hover { color: #F07800; }
+#menu a { color: #3A3A3C; }
+  #menu a:visited { color: #0D46AF;}
+  #menu a:active { color: #FF0000; }
+  #menu a:hover { color: #F07800; }
+*/
+
+/* nadpisy */
+h1, h2, h3 { color: #029123; } /* #002776 #1e5351*/
+h4, h5 {
+	color: #037f1a;  /* #002776 #1e5351*/
+	font-weight: 400;
+}
+
+/* seznamy */
+ul {
+  margin-left: 0;
+  padding-left: 1em;
+  list-style: none!important;
+}
+#app_content ul li {
+   padding-left: 10px;
+   background: transparent url('/pics/design/14/b/li.png') 0 .5em no-repeat;
+  }
+  #app_content ul ol li { padding-left: 0; background-image: none; }
+
+dt { background-image: url('/pics/design/14/b/li2.png'); }
+
+/* /auth/ */
+dl.dl1 { margin-bottom: 1.2em; }
+dl.dl2, dl.dl3, dl.dl4, dl.dl5, dl.dl6, dl.dl7 {
+  margin: 1.2em 0;
+  padding: 0.5em 0 0 0; 
+  background-color: transparent;
+  background-position: 10px 0;
+  background-repeat: no-repeat;
+}
+dl.dl1 dt, dl.dl2 dt, dl.dl3 dt, dl.dl4 dt, dl.dl5 dt, dl.dl6 dt, dl.dl7 dt {
+  font-size: 110%;
+}
+
+dl.dl2 { background-image: url('/pics/design/14/b/dt2-hr.png'); }
+dl.dl3 { background-image: url('/pics/design/14/b/dt3-hr.png'); }
+dl.dl4 { background-image: url('/pics/design/14/b/dt4-hr.png'); }
+dl.dl5 { background-image: url('/pics/design/14/b/dt5-hr.png'); }
+dl.dl6 { background-image: url('/pics/design/14/b/dt6-hr.png'); }
+dl.dl7 { background-image: url('/pics/design/14/b/dt7-hr.png'); }
+
+.dl2 dt, .dl3 dt, .dl4 dt, .dl5 dt, .dl6 dt, .dl7 dt {
+  background: transparent url('/pics/design/14/b/dt2.png') 0 50% no-repeat;
+}
+.dl3 dt { background-image: url('/pics/design/14/b/dt3.png'); }
+.dl4 dt { background-image: url('/pics/design/14/b/dt4.png'); }
+.dl5 dt { background-image: url('/pics/design/14/b/dt5.png'); }
+.dl6 dt { background-image: url('/pics/design/14/b/dt6.png'); }
+.dl7 dt { background-image: url('/pics/design/14/b/dt7.png'); }
+
+.dl2 dt a:hover { color: #F63313; }
+.dl3 dt a:hover { color: #C36839; }
+.dl4 dt a:hover { color: #6A863C; }
+.dl5 dt a:hover { color: #63C640; }
+.dl6 dt a:hover { color: #369993; }
+.dl7 dt a:hover { color: #639; }
+
+.dl1 dt a {
+	text-decoration: none;
+	border-bottom: 1px solid #F07800;
+}
+.dl2 dt a {
+	text-decoration: none;
+	border-bottom: 1px solid #F63313;
+}
+.dl3 dt a {
+	text-decoration: none;
+	border-bottom: 1px solid #C36839;
+}
+.dl4 dt a {
+	text-decoration: none;
+	border-bottom: 1px solid #6A863C;
+}
+.dl5 dt a {
+	text-decoration: none;
+	border-bottom: 1px solid #63C640;
+}
+.dl6 dt a {
+	text-decoration: none;
+	border-bottom: 1px solid #369993;
+}
+.dl7 dt a {
+	text-decoration: none;
+	border-bottom: 1px solid #663399;
+}
+
+/* Studium, katalog */
+
+#st_hrom_vyber { padding-bottom: 0; }
+  #st_hrom_vyber legend { margin: 0; }
+
+.st_rozcestnik_new {
+  padding-top: 1px;
+  background: transparent url('/pics/design/14/b/dtX-hr.png') 10px 0 no-repeat; 
+} 
+
+#st_osobni, #katal_operace, #ss_obdobi_predmety { background: transparent url('/pics/design/14/b/dtX-hr.png') 10px 0 no-repeat; }
+#st_studia, #katal_obdobi, #ss_reg_zapis, #rozvrh_obecne { background: transparent url('/pics/design/14/b/dt2-hr.png') 10px 0 no-repeat; }
+#st_predmety, #katal_prohlidka, #ss_rozpisy { background: transparent url('/pics/design/14/b/dt3-hr.png') 10px 0 no-repeat; }
+#st_doktorske, #katal_ects_label, #ss_szz, #rozvrh_prehledy_statistiky { background: transparent url('/pics/design/14/b/dt4-hr.png') 10px 0 no-repeat; }
+#st_szz, #katal_editace, #ss_anketa { background: transparent url('/pics/design/14/b/dt5-hr.png') 10px 0 no-repeat; }
+#st_stipendia, #katal_kontrola, #ss_elearn { background: transparent url('/pics/design/14/b/dt6-hr.png') 10px 0 no-repeat; }
+#st_tisky, #katal_skupiny, #ss_finance, #rozvrh_rozvrhovani { background: transparent url('/pics/design/14/b/dt7-hr.png') 10px 0 no-repeat; }
+#st_hrom_dopisy, #katal_atributy, #ss_editace_pos { background: transparent url('/pics/design/14/b/dt6-hr.png') 10px 0 no-repeat; }
+#st_exporty, #katal_akreditace, #ss_prehl_stat { background: transparent url('/pics/design/14/b/dt5-hr.png') 10px 0 no-repeat; }
+#st_matrika, #katal_navody, #ss_plagiat { background: transparent url('/pics/design/14/b/dt4-hr.png') 10px 0 no-repeat; }
+#st_ostatni, #katal_vybrane, #ss_cist_zahr { background: transparent url('/pics/design/14/b/dt3-hr.png') 10px 0 no-repeat; }
+#ss_info { background: transparent url('/pics/design/14/b/dt2-hr.png') 10px 0 no-repeat; }
+
+.st_rozcestnik_new li { padding-left: 12px; }
+
+#st_osobni li, #katal_operace li, #ss_obdobi_predmety li { background: transparent url('/pics/design/14/b/li2.png') 0 .4em no-repeat; }
+#st_studia li, #katal_obdobi li, #ss_reg_zapis li, #rozvrh_obecne li { background: transparent url('/pics/design/14/b/dt2.png') 0 .4em no-repeat; }
+#st_predmety li, #katal_prohlidka li, #ss_rozpisy li, #ss_spv li { background: transparent url('/pics/design/14/b/dt3.png') 0 .4em no-repeat; }
+#st_doktorske li, #katal_ects_label li, #ss_szz li, #rozvrh_prehledy_statistiky li { background: transparent url('/pics/design/14/b/dt4.png') 0 .4em no-repeat; }
+#st_szz li, #katal_editace li, #ss_anketa li { background: transparent url('/pics/design/14/b/dt5.png') 0 .4em no-repeat; }
+#st_stipendia li, #katal_kontrola li, #ss_elearn li { background: transparent url('/pics/design/14/b/dt6.png') 0 .4em no-repeat; }
+#st_tisky li, #katal_skupiny li, #ss_finance li, #rozvrh_rozvrhovani li { background: transparent url('/pics/design/14/b/dt7.png') 0 .4em no-repeat; } /* x */
+#st_hrom_dopisy li, #katal_atributy li, #ss_editace_pos li { background: transparent url('/pics/design/14/b/dt6.png') 0 .4em no-repeat; }
+#st_exporty li, #katal_akreditace li, #ss_prehl_stat li { background: transparent url('/pics/design/14/b/dt5.png') 0 .4em no-repeat; }
+#st_matrika li, #katal_navody li, #ss_plagiat li { background: transparent url('/pics/design/14/b/dt4.png') 0 .4em no-repeat; }
+#st_ostatni li, #katal_vybrane li, #ss_cist_zahr li { background: transparent url('/pics/design/14/b/dt3.png') 0 .4em no-repeat; }
+#ss_info li { background: transparent url('/pics/design/14/b/dt2.png') 0 .4em no-repeat; }
+
+/* ZU + skolitel */
+
+#stud, #phdhodnoc, #pa { background: transparent url('/pics/design/14/b/dtX-hr.png') 10px 0 no-repeat; }
+#stud li, #pa li { background: transparent url('/pics/design/14/b/li2.png') 0 .4em no-repeat; }
+
+#studmat, #phdnavrh { background: transparent url('/pics/design/14/b/dt2-hr.png') 10px 0 no-repeat; }
+#studmat li, #etesty li { background: transparent url('/pics/design/14/b/dt2.png') 0 .4em no-repeat; }
+
+#hodnoc, #phdpredm { background: transparent url('/pics/design/14/b/dt3-hr.png') 10px 0 no-repeat; }
+#hodnoc li, #zkousky li { background: transparent url('/pics/design/14/b/dt3.png') 0 .4em no-repeat; }
+
+#semin, #prez, #phdpubl { background: transparent url('/pics/design/14/b/dt4-hr.png') 10px 0 no-repeat; }
+#semin li, #prez li { background: transparent url('/pics/design/14/b/dt4.png') 0 0.5em no-repeat; }
+
+#rozpisy, #phdila { background: transparent url('/pics/design/14/b/dtX-hr.png') 10px 0 no-repeat; }
+
+#rozpisy, #phdstaze { background: transparent url('/pics/design/14/b/dt5-hr.png') 10px 0 no-repeat; }
+#rozpisy li { background: transparent url('/pics/design/14/b/dt5.png') 0 0.5em no-repeat; }
+
+#katal, #phdstud, #phdtisk { background: transparent url('/pics/design/14/b/dt6-hr.png') 10px 0 no-repeat; }
+#katal li { background: transparent url('/pics/design/14/b/dt6.png') 0 0.5em no-repeat; }
+
+#poznbl, #phdszz { background: transparent url('/pics/design/14/b/dt7-hr.png') 10px 0 no-repeat; }
+#eucebna, #phdszz { background: transparent url('/pics/design/14/b/dt7-hr.png') 10px 0 no-repeat; }
+#poznbl li { background: transparent url('/pics/design/14/b/dt7.png') 0 0.5em no-repeat; }
+#eucebna li { background: transparent url('/pics/design/14/b/dt7.png') 0 0.5em no-repeat; }
+
+
+#stud.new, #pa.new { background: transparent url('/pics/design/14/b/zu/zu-stud.png') 0 0 no-repeat; }
+#studmat.new { background: transparent url('/pics/design/14/b/zu/zu-studmat.png') 0 0 no-repeat; }
+#etesty.new { background: transparent url('/pics/design/14/b/zu/zu-etesty.png') 0 0 no-repeat; }
+#hodnoc.new { background: transparent url('/pics/design/14/b/zu/zu-hodnoc.png') 0 0 no-repeat; }
+#zkousky.new { background: transparent url('/pics/design/14/b/zu/zu-zkousky.png') 0 0 no-repeat; }
+#semin.new { background: transparent url('/pics/design/14/b/zu/zu-semin.png') 0 0 no-repeat; }
+#prez.new { background: transparent url('/pics/design/14/b/zu/zu-prez.png') 0 0 no-repeat; }
+#rozpisy.new { background: transparent url('/pics/design/14/b/zu/zu-rozpisy.png') 0 0 no-repeat; }
+#praxe.new { background: transparent url('/pics/design/14/b/zu/zu-stud.png') 0 0 no-repeat; }
+#katal.new { background: transparent url('/pics/design/14/b/zu/zu-katal.png') 0 0 no-repeat; }
+#poznbl.new { background: transparent url('/pics/design/14/b/zu/zu-poznbl.png') 0 0 no-repeat; }
+#eucebna.new { background: transparent url('/pics/design/14/b/zu/zu-online.png') 0 0 no-repeat; }
+
+a.zu1, a.zu2, a.zu3, a.zu4, a.zu5, a.zu6, a.zu7 {
+	text-decoration: none;
+	border-bottom: 1px solid #002776;
+}
+a.zu1 { border-color: #F07800; }
+a.zu2 { border-color: #F63313; }
+a.zu3 { border-color: #C36839; }
+a.zu4 { border-color: #6A863C; }
+a.zu5 { border-color: #63C640; }
+a.zu6 { border-color: #369993; }
+a.zu7 { border-color: #639; }
+
+a.zu1:hover { color: #F07800; }
+a.zu2:hover { color: #F63313; }
+a.zu3:hover { color: #C36839; }
+a.zu4:hover { color: #6A863C; }
+a.zu5:hover { color: #63C640; }
+a.zu6:hover { color: #369993; }
+a.zu7:hover { color: #639; }
+
+/* eprihlaska */
+#ep-tabulka h3 { background: transparent url('/pics/design/14/b/hx.png') left bottom repeat-x; }
+
+.box h3.sipka, .box h4.sipka, .box div.sipka {
+  background-image: url('/pics/design/14/b/ep-hx-sipka.png');
+}
+
+.ep #menu { padding-bottom: 150px; }
+
+.ep #paticka-obsah { min-height: 150px; }
+  * html .ep #paticka-obsah { height: 150px; }
+ 
+/* .ep-prouzek ico z 'p' */
+
+/* Elportal */
+.elImg { background-image: url('/pics/design/14/b/ram-obrazku.png'); }
+.elImg2 { background-image: url('/pics/design/14/b/elImg2.png'); }
+
+/* Rozvrh */
+dl#zobrazeni-rozvrhu dt { background-image: none; padding-left: 0; }
+
+/* oc */
+.oc-help { background-image: url('/pics/design/14/oc/napoveda-b.png'); }
+.oc-ucitel { background: transparent url('/pics/design/14/oc/ucitel-b.png') 0 0 no-repeat; }
+.oc-popis { background: #ededdf url('/pics/design/14/oc/popis-b.png') top right no-repeat; }
+.oc-kniha { background-image: url('/pics/design/14/oc/kniha-b.png'); }
+.oc-tli1 h5, .oc-tli2 h5 { background-color: #fff; }
+
+
+.dvojce { background-image: url('/pics/design/14/b/dvojce.png'); }
+
+/* th */
+#metadata h2 { background-image: none; }
+#metadata h3 { background-image: url('/pics/design/14/th/metadata-b.png'); }
+
+#th-sloupec { background-image: url('/pics/design/14/th/sloupec-b.png'); }
+
+/* df */
+#blog_le_sl { background-color: #F7F8FC; }
+
+p.blog-nz { background-image: url('/pics/design/14/df/napoveda-b.png'); }
+
+.kalkulacka { background-image: url('/pics/design/14/b/hledani-kalk.png'); }
+
+td.zvyraznit { box-shadow: 0px 0px 7px black; }
+
+/* upravy css z foundation-design-z pre design z */
+
+html {
+    font-family: sans-serif;
+    /* 1 */
+/*    line-height: 1.15; */
+    /* 2 */
+    -ms-text-size-adjust: 100%;
+    /* 3 */
+    -webkit-text-size-adjust: 100%;
+    /* 3 */ }
+
+body {
+    margin: 0; }
+
+main {
+    display: block; }
+
+html {
+    box-sizing: border-box;
+    font-size: 14px; }
+
+#sticky_panel, #hlavicka {
+	font-size: 1rem;
+}
+
+#hlavicka button {
+	font-family: Roboto,Open Sans,Arial,sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit; }
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 400;
+/*    line-height: 1.5; */
+    color: #0a0a0a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+
+.foundation-design-z.dropdown-pane {
+    padding: 1rem;
+    border-radius: 0;
+    background-color: #fefefe;
+    font-size: 1rem;
+}
+
+/* konec upravy css z foundation-design-z pre design z */
+
+#app_name {
+	line-height: 1.5;
+}
+
+@media all and (max-width: 1023px) {
+#desktop_only_icon {
+        display: inline;
+	position: relative;
+	left: 5px;
+	height: 16px;
+	top: -2px;
+}
+}
+
+.tooltip {
+	box-shadow: 1px 2px 5px #888;
+	position: relative;
+	background: #ffffff;
+	border: 1px solid #888; 
+	padding: 5px;
+	max-width: 300px;
+	width: 100%;
+}
+
+/* upravy r6.css pre design z */
+#app_content_row {
+	max-width: 85.71429rem;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#app_content {
+	margin-right: 0.57143rem;
+	margin-left: 0.57143rem;
+	margin-top: -1rem;
+	padding-top: 1rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	padding-bottom: 1rem;
+	background-color: #F7F8FC;
+}
+
+.foundation-design-z .menu {
+	width: initial;
+}
+
+#prepinace > .menu {
+	display: block;
+}
+
+#left_menu div.items > ul {
+	font-size: 14px;
+}
+
+/* special selectbox v hrom. vybere */
+
+#app_content ul.chosen-results li {
+	background: none;
+}
+
+#app_content ul.chosen-choices li {
+	background: none;
+	padding-left: 5px;
+}
+
+#app_content ul.chosen-results li.highlighted {
+	background-color: #3875d7;
+}
+
+.vlajka_svg {
+	height: auto;
+	width: 15px;
+}
+
+/* doplnění třídy pro přístupnost */
+
+.show-for-sr,
+.show-on-focus {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0); }
+
+.show-on-focus:active, .show-on-focus:focus {
+  position: static !important;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto; }
+
+
+/* konec upravy r6.css pre design z */

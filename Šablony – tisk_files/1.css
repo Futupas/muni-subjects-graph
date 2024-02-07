@@ -1,0 +1,56 @@
+/* Základní motiv */
+@media all and (min-width: 1024px) {
+	#app_header_image {
+		background-image: url('/pics/design/r6/motiv/1/header-large.svg');
+		background-position: 671px bottom;
+		background-size: auto 102px;
+	}
+}
+
+@media all and (min-width: 640px) and (max-width: 1023px) {
+	#app_header_image {
+		background-image: url('/pics/design/r6/motiv/1/header-medium.svg');
+		background-position: 389px bottom;
+		background-size: auto 100px;
+	}
+}
+
+footer > .row {
+        padding-top: 1.7rem;
+        background-image: url('/pics/design/r6/motiv/1/footer.svg');
+        background-position: left bottom;
+        background-repeat: no-repeat;
+}
+
+.motiv-titulka .app_header_motiv_switch {
+	top: -20px !important;
+}
+
+#pruvodce_header {
+	background-image: none;
+}
+
+@media only screen and (min-width: 40.063em) {
+	#pruvodce_header {
+		background-image: url('/pics/design/14/b/logotyp-is.png'), url('/pics/design/r6/motiv/1/header-large.svg');
+		background-size: 25px 25px, auto !important;
+		background-position: top 46px right 86px, top 0 right 0 !important;
+	}
+}
+
+/* design tlačítka vyhledávání */
+.motiv-titulka #vyhledavani_form .input-group-button {
+	background-color: #dedede;
+	color: #002776;
+	border: 0;
+}
+
+.motiv-titulka #vyhledavani_form button[type=submit]:hover {
+	background-color: #c8c8c8;
+	color: #002776;
+}
+
+.motiv-titulka #vyhledavani_form .input-group-label {
+	border-color: #cacaca
+}
+
