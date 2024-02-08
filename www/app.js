@@ -14,6 +14,9 @@ TODO List:
 
 */
 
+
+const SHOW_ONLY_DEPENDENCIES = true;
+
 const main = document.getElementById('main');
 
 function getAllPrerequisitesSubjects(prerequisites) {
@@ -31,7 +34,8 @@ function getAllPrerequisitesSubjects(prerequisites) {
             }
         } else if (node.code) {
             const code = node.code;
-            if (!allSubjects.find(x => x === code)) allSubjects.push(code);
+            // We remove NOTs to avoid circular dependency
+            if (node.not !== true && !allSubjects.find(x => x === code)) allSubjects.push(code);
         } else {
             console.warn('Unknown node', node);
         }
@@ -58,7 +62,7 @@ function prepareData(data) {
         const subject = data[code];
         subject.code = code;
 
-        const allPrerequisutes = getAllPrerequisitesSubjects(subject.prerequisites);
+        const allPrerequisutes = getAllPrerequisitesSubjects(subject.prerequisites).filter(x => x !== code);
         subject.prerequisitesArray = allPrerequisutes.filter(x => data[x]);
 
         for (const prerequisite of allPrerequisutes) {
@@ -73,6 +77,15 @@ function prepareData(data) {
         }
     }
 
+    if (SHOW_ONLY_DEPENDENCIES) {
+        for (const code of Object.keys(data)) {
+            const subject = data[code];
+            if (!subject.prerequisitesArray?.length && !subject.isPrerequisiteFor?.length) {
+                delete data[code];
+            }
+        }
+    }
+
     // Make layers
     {
         const alreadyDone = []; // The subjects we already have
@@ -81,6 +94,15 @@ function prepareData(data) {
         let currentLayer = 1;
         while (alreadyDone.length < subjectsCount) {
             const subjects = Object.values(data).filter(x => !alreadyDone.find(y => y === x.code) && isSmallArrayInBig(x.prerequisitesArray, alreadyDone));
+
+            if (!subjects.length) {
+                console.error('stranger things...', 
+                    alreadyDone.map(x => data[x]), 
+                    Object.values(data), 
+                    Object.values(data).filter(x => !alreadyDone.find(y => y === x.code))
+                );
+                break;
+            }
 
             for (const subject of subjects) {
                 subject.layer = currentLayer;

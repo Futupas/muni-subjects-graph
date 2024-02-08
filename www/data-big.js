@@ -67,7 +67,7 @@ const DATA = {
                 },
                 {
                     code: 'IB113',
-                    not: false,
+                    not: true,
                     now: true,
                 },
             ],
@@ -85,7 +85,7 @@ const DATA = {
                 },
                 {
                     code: 'IB111',
-                    not: false,
+                    not: true,
                     now: true,
                 },
                 {
