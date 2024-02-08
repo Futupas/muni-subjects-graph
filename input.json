@@ -1,535 +1,576 @@
 [
-    {
-      "name": "Šablona pro kontrolu průchodu studiem:\nZ níže uvedeného seznamu nutno splnit předmětů/podmínek: vše",
-      "tableEl": {},
-      "prevEl": {},
-      "table": [
-        {
-          "název": "Lineární algebra a diskrétní matematika",
-          "garant": "P. Hasil",
-          "vyučující": "D. Kruml",
-          "ukon.": "zk",
-          "rozsah": "2/2/0",
-          "kred.": "3 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "!NOW(MB151) && ( !MB151 || !MB154 ) && ( !MB101 || !MB104 )",
-          "poznámka": ""
-        },
-        {
-          "název": "Matematické základy informatiky",
-          "garant": "P. Hliněný",
-          "vyučující": "P. Hliněný",
-          "ukon.": "zk",
-          "rozsah": "2/2/1",
-          "kred.": "4 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "",
-          "poznámka": ""
-        },
-        {
-          "název": "Základy informatiky",
-          "garant": "P. Novotný",
-          "vyučující": "P. Novotný",
-          "ukon.": "zk",
-          "rozsah": "2/2/0",
-          "kred.": "3 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "!IB005 || !IB107",
-          "poznámka": ""
-        }
-      ]
-    },
-    {
-      "name": "bez názvu alespoň 1 z 2 předmětů/podmínek\n",
-      "tableEl": {},
-      "prevEl": {},
-      "table": [
-        {
-          "název": "Základy programování",
-          "garant": "N. Beneš",
-          "vyučující": "N. Beneš",
-          "ukon.": "zk",
-          "rozsah": "2/2/2",
-          "kred.": "5 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "!IB113 && !NOW(IB113)",
-          "poznámka": ""
-        },
-        {
-          "název": "Úvod do programování a algoritmizace",
-          "garant": "R. Pelánek",
-          "vyučující": "R. Pelánek",
-          "ukon.": "zk",
-          "rozsah": "2/2/1",
-          "kred.": "4 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "!NOW(IB111) && !IB111 && !PB162 && !PB161 && !PB071 && !IB001 && !program(B-INF) && !program(B-PVA)",
-          "poznámka": ""
-        }
-      ],
-      "nameBald": "bez názvu",
-      "nameRegular": "alespoň 1 z 2 předmětů/podmínek"
-    },
-    {
-      "name": null,
-      "tableEl": {},
-      "prevEl": {},
-      "table": [
-        {
-          "název": "Úvod do programování a algoritmizace II",
-          "garant": "I. Černá",
-          "vyučující": "I. Černá",
-          "ukon.": "zk",
-          "rozsah": "2/1/0",
-          "kred.": "3 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "(IB111 || IB113) && !IB002 && !NOW(IB002)",
-          "poznámka": ""
-        },
-        {
-          "název": "Přínosy a rizika inteligentních systémů",
-          "garant": "J. Zlatuška",
-          "vyučující": "J. Zlatuška",
-          "ukon.": "zk",
-          "rozsah": "2/0/0",
-          "kred.": "2 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "",
-          "poznámka": ""
-        },
-        {
-          "název": "Software Engineering I",
-          "garant": "B. Bühnová",
-          "vyučující": "B. Bühnová",
-          "ukon.": "zk",
-          "rozsah": "2/2/0",
-          "kred.": "3 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "PB161 || PB162 || PV178 || PB112",
-          "poznámka": ""
-        },
-        {
-          "název": "Principy nízkoúrovňového programování",
-          "garant": "P. Švenda",
-          "vyučující": "P. Švenda",
-          "ukon.": "zk",
-          "rozsah": "2/2/1",
-          "kred.": "4 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "",
-          "poznámka": ""
-        },
-        {
-          "název": "Výpočetní systémy",
-          "garant": "M. Brandejs",
-          "vyučující": "M. Brandejs",
-          "ukon.": "zk",
-          "rozsah": "3/0/0",
-          "kred.": "3 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "! NOW(PB150)",
-          "poznámka": ""
-        }
-      ]
-    },
-    {
-      "name": "Operační systémy alespoň 6 kr.\n",
-      "tableEl": {},
-      "prevEl": {},
-      "table": [
-        {
-          "název": "Operační systémy",
-          "garant": "P. Ročkai",
-          "vyučující": "P. Ročkai",
-          "ukon.": "z",
-          "rozsah": "2/0/0",
-          "kred.": "2 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "!PB153 && !NOW(PB153)",
-          "poznámka": ""
-        },
-        {
-          "název": "Operační systémy - cvičení",
-          "garant": "P. Ročkai",
-          "vyučující": "A. Matoušek, P. Ročkai",
-          "ukon.": "k",
-          "rozsah": "0/2/1",
-          "kred.": "3 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "(PB153 || PB152) && (PB071 || SOUHLAS)",
-          "poznámka": ""
-        }
-      ],
-      "nameBald": "Operační systémy",
-      "nameRegular": "alespoň 6 kr."
-    },
-    {
-      "name": null,
-      "tableEl": {},
-      "prevEl": {},
-      "table": [
-        {
-          "název": "Počítačové sítě",
-          "garant": "E. Hladká",
-          "vyučující": "E. Hladká",
-          "ukon.": "zk",
-          "rozsah": "2/0/0",
-          "kred.": "2 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "",
-          "poznámka": ""
-        },
-        {
-          "název": "Počítačové sítě - cvičení",
-          "garant": "E. Hladká",
-          "vyučující": "E. Hladká",
-          "ukon.": "z",
-          "rozsah": "0/2/0",
-          "kred.": "2 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "",
-          "poznámka": ""
-        },
-        {
-          "název": "Základy databázových a informačních systémů",
-          "garant": "V. Dohnal",
-          "vyučující": "V. Dohnal, J. Ráček",
-          "ukon.": "zk",
-          "rozsah": "2/2/0",
-          "kred.": "3 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "!PB154 && !NOW(PB154)",
-          "poznámka": ""
-        },
-        {
-          "název": "UNIX",
-          "garant": "M. Brandejs",
-          "vyučující": "M. Brandejs",
-          "ukon.": "zk",
-          "rozsah": "2/0/0",
-          "kred.": "2 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "",
-          "poznámka": ""
-        },
-        {
-          "název": "Applied Information Systems",
-          "garant": "J. Ráček",
-          "vyučující": "J. Ráček",
-          "ukon.": "k",
-          "rozsah": "2/0/0",
-          "kred.": "2 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "",
-          "poznámka": ""
-        },
-        {
-          "název": "Information security and cryptography",
-          "garant": "V. Matyáš",
-          "vyučující": "V. Matyáš, M. Sýs, M. Kumpošt, P. Švenda, P. Čeleda, M. Ukrop, P. Loutocký",
-          "ukon.": "zk",
-          "rozsah": "2/2",
-          "kred.": "3 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "",
-          "poznámka": ""
-        },
-        {
-          "název": "Autentizace a řízení přístupu",
-          "garant": "V. Matyáš",
-          "vyučující": "V. Matyáš, P. Loutocký",
-          "ukon.": "zk",
-          "rozsah": "2/0/0",
-          "kred.": "2 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "",
-          "poznámka": ""
-        },
-        {
-          "název": "Správa systémů MS Windows I",
-          "garant": "E. Hladká",
-          "vyučující": "L. Dušek, L. Fázik",
-          "ukon.": "k",
-          "rozsah": "1/2/0",
-          "kred.": "3 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "",
-          "poznámka": ""
-        },
-        {
-          "název": "Seminář simulace kyberútoků",
-          "garant": "J. Vykopal",
-          "vyučující": "J. Vykopal, P. Čeleda",
-          "ukon.": "k",
-          "rozsah": "0/2/1",
-          "kred.": "3 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "(PB156 && PV004) || SOUHLAS",
-          "poznámka": ""
-        },
-        {
-          "název": "English Exam",
-          "garant": "E. Rudolfová",
-          "vyučující": "E. Rudolfová, M. Sekanina Vavřinová, Z. Vašíčková, A. Zita",
-          "ukon.": "zk",
-          "rozsah": "0/0/0",
-          "kred.": "1",
-          "semestr": "",
-          "prerekvizity": "",
-          "poznámka": ""
-        },
-        {
-          "název": "Bakalářská stáž - Kyberbezpečnost",
-          "garant": "J. Ráček",
-          "vyučující": "J. Ráček, L. Válová",
-          "ukon.": "z",
-          "rozsah": "0/0/0 Stáž v minimálním rozsahu 12 týdnů.",
-          "kred.": "20 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "(!rocnik(1) && !rocnik(2)) && SOUHLAS",
-          "poznámka": ""
-        },
-        {
-          "název": "Úvod do práva ICT II\n[ nevypisuje se v daném semestru: jaro 2024 ]",
-          "garant": "J. Míšek",
-          "vyučující": "J. Harašta, P. Loutocký, J. Míšek, M. Myška",
-          "ukon.": "k",
-          "rozsah": "2/1/0",
-          "kred.": "4",
-          "semestr": "",
-          "prerekvizity": "!obor(PR) && !obor(PR01) && !program(N-VS)",
-          "poznámka": ""
-        },
-        {
-          "název": "Kyberkriminalita a kybernetická bezpečnost",
-          "garant": "R. Polčák",
-          "vyučující": "F. Kasl, P. Loutocký, J. Míšek, V. Stupka, J. Vostoupal",
-          "ukon.": "k",
-          "rozsah": "0/2/0",
-          "kred.": "3",
-          "semestr": "",
-          "prerekvizity": "!obor(PR) && !obor(PR01) && !program(N-VS)",
-          "poznámka": ""
-        },
-        {
-          "název": "Úvod do bezpečnostních a strategických studií\n[ nevypisuje se v daném semestru: jaro 2024 ]",
-          "garant": "M. Mareš",
-          "vyučující": "V. Divišová, J. Kleiner, L. Konečná",
-          "ukon.": "zk",
-          "rozsah": "1/1/0",
-          "kred.": "6",
-          "semestr": "",
-          "prerekvizity": "!BSS101 && !NOW(BSS101)",
-          "poznámka": ""
-        },
-        {
-          "název": "Bezpečnostní politika ČR",
-          "garant": "M. Mareš",
-          "vyučující": "M. Mareš, P. Mlejnková",
-          "ukon.": "zk",
-          "rozsah": "1/1/0",
-          "kred.": "6",
-          "semestr": "",
-          "prerekvizity": "!BSS103 && !NOW(BSS103)",
-          "poznámka": ""
-        },
-        {
-          "název": "Kybernetická válka\n[ nevypisuje se v daném semestru: jaro 2024 ]",
-          "garant": "J. Kraus",
-          "vyučující": "J. Drmola, J. Kraus",
-          "ukon.": "zk",
-          "rozsah": "2/0/0",
-          "kred.": "4",
-          "semestr": "",
-          "prerekvizity": "!BSS152 && !NOW(BSS152)",
-          "poznámka": ""
-        }
-      ]
-    },
-    {
-      "name": "Sazba a akademické psaní alespoň 1 z 3 předmětů/podmínek\n",
-      "tableEl": {},
-      "prevEl": {},
-      "table": [
-        {
-          "název": "Elektronická příprava dokumentů",
-          "garant": "P. Sojka",
-          "vyučující": "P. Sojka, V. Starý Novotný",
-          "ukon.": "zk",
-          "rozsah": "2/1/0",
-          "kred.": "3 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "",
-          "poznámka": ""
-        },
-        {
-          "název": "Základy odborného stylu",
-          "garant": "A. Horák",
-          "vyučující": "H. Žižková, Z. Nevěřilová, M. Stará, P. Šmerk",
-          "ukon.": "k",
-          "rozsah": "1/1/0",
-          "kred.": "2 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "NOW(SBAPR) || (1422:BI1000Z)",
-          "poznámka": ""
-        },
-        {
-          "název": "Introduction to Academic Writing",
-          "garant": "E. Rudolfová",
-          "vyučující": "A. Zita",
-          "ukon.": "k",
-          "rozsah": "1/1/0",
-          "kred.": "2 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "NOW(SBAPR)",
-          "poznámka": ""
-        }
-      ],
-      "nameBald": "Sazba a akademické psaní",
-      "nameRegular": "alespoň 1 z 3 předmětů/podmínek"
-    },
-    {
-      "name": "Programování alespoň 1 z 3 předmětů/podmínek",
-      "tableEl": {},
-      "prevEl": {},
-      "table": [
-        {
-          "název": "Základy objektově orientovaného programování v jazyce Java",
-          "garant": "R. Ošlejšek",
-          "vyučující": "R. Ošlejšek, T. Pitner, J. Plhák",
-          "ukon.": "zk",
-          "rozsah": "2/2/0",
-          "kred.": "3 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "!(PB162) && ! NOW(PB162)",
-          "poznámka": ""
-        },
-        {
-          "název": "Programování v jazyce C++",
-          "garant": "N. Beneš",
-          "vyučující": "N. Beneš, P. Ročkai",
-          "ukon.": "zk",
-          "rozsah": "2/2/0",
-          "kred.": "3 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "PB006",
-          "poznámka": ""
-        },
-        {
-          "název": "Programování v jazyce Java",
-          "garant": "T. Pitner",
-          "vyučující": "T. Pitner, R. Ošlejšek",
-          "ukon.": "zk",
-          "rozsah": "2/2/0",
-          "kred.": "3 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "PB006 && ! PB112 && ! NOW(PB112)",
-          "poznámka": ""
-        }
-      ],
-      "nameBald": "Programování",
-      "nameRegular": "alespoň 1 z 3 předmětů/podmínek"
-    },
-    {
-      "name": "Kyberbezpečnost alespoň 1 z 2 předmětů/podmínek",
-      "tableEl": {},
-      "prevEl": {},
-      "table": [
-        {
-          "název": "Řízení informační bezpečnosti",
-          "garant": "V. Matyáš",
-          "vyučující": "P. Loutocký, K. Malinka, V. Matyáš",
-          "ukon.": "zk",
-          "rozsah": "1/0/0",
-          "kred.": "1 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "",
-          "poznámka": ""
-        },
-        {
-          "název": "Kyberbezpečnost v organizaci",
-          "garant": "J. Vykopal",
-          "vyučující": "J. Vykopal, M. Laštovička, P. Čeleda",
-          "ukon.": "k",
-          "rozsah": "2/0/2",
-          "kred.": "3 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "PV080",
-          "poznámka": ""
-        }
-      ],
-      "nameBald": "Kyberbezpečnost",
-      "nameRegular": "alespoň 1 z 2 předmětů/podmínek"
-    },
-    {
-      "name": "Angličtina alespoň 2 kr.",
-      "tableEl": {},
-      "prevEl": {},
-      "table": [
-        {
-          "název": "English I",
-          "garant": "E. Rudolfová",
-          "vyučující": "I. Tulajová, L. Procházková, E. Rudolfová, M. Sekanina Vavřinová, A. Zita",
-          "ukon.": "z",
-          "rozsah": "0/2/0",
-          "kred.": "1",
-          "semestr": "",
-          "prerekvizity": "",
-          "poznámka": ""
-        },
-        {
-          "název": "English II",
-          "garant": "E. Rudolfová",
-          "vyučující": "E. Rudolfová, M. Sekanina Vavřinová, A. Zita",
-          "ukon.": "z",
-          "rozsah": "0/2/0",
-          "kred.": "2",
-          "semestr": "",
-          "prerekvizity": "VB035 || souhlas",
-          "poznámka": ""
-        },
-        {
-          "název": "Academic and Professional Skills in English for IT",
-          "garant": "E. Rudolfová",
-          "vyučující": "A. Zita",
-          "ukon.": "zk",
-          "rozsah": "0/2/0",
-          "kred.": "2 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "VB001 || program(N-UCI)",
-          "poznámka": ""
-        }
-      ],
-      "nameBald": "Angličtina",
-      "nameRegular": "alespoň 2 kr."
-    },
-    {
-      "name": null,
-      "tableEl": {},
-      "prevEl": {},
-      "table": [
-        {
-          "název": "Opakování před SBZZ",
-          "garant": "J. Barnat",
-          "vyučující": "J. Barnat",
-          "ukon.": "z",
-          "rozsah": "0/0/1",
-          "kred.": "1 (plus ukončení)",
-          "semestr": "",
-          "prerekvizity": "NOW(SZB)",
-          "poznámka": ""
-        },
-        {
-          "název": "Bakalářská práce",
-          "garant": "D. Svoboda",
-          "vyučující": "D. Svoboda\n[ hodnotí všichni vyučující pracoviště ]",
-          "ukon.": "z",
-          "rozsah": "0/0/0",
-          "kred.": "10 (max 10 kred)",
-          "semestr": "",
-          "prerekvizity": "",
-          "poznámka": ""
-        }
-      ]
-    }
+  {
+    "name": "Šablona pro kontrolu průchodu studiem:\nZ níže uvedeného seznamu nutno splnit předmětů/podmínek: vše",
+    "tableEl": {},
+    "prevEl": {},
+    "table": [
+      {
+        "kód": "MB141",
+        "název": "Lineární algebra a diskrétní matematika",
+        "garant": "P. Hasil",
+        "vyučující": "D. Kruml",
+        "ukon.": "zk",
+        "rozsah": "2/2/0",
+        "kred.": "3 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "!NOW(MB151) && ( !MB151 || !MB154 ) && ( !MB101 || !MB104 )",
+        "poznámka": ""
+      },
+      {
+        "kód": "IB000",
+        "název": "Matematické základy informatiky",
+        "garant": "P. Hliněný",
+        "vyučující": "P. Hliněný",
+        "ukon.": "zk",
+        "rozsah": "2/2/1",
+        "kred.": "4 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "",
+        "poznámka": ""
+      },
+      {
+        "kód": "IB110",
+        "název": "Základy informatiky",
+        "garant": "P. Novotný",
+        "vyučující": "P. Novotný",
+        "ukon.": "zk",
+        "rozsah": "2/2/0",
+        "kred.": "3 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "!IB005 || !IB107",
+        "poznámka": ""
+      }
+    ]
+  },
+  {
+    "name": "bez názvu alespoň 1 z 2 předmětů/podmínek\n",
+    "tableEl": {},
+    "prevEl": {},
+    "table": [
+      {
+        "kód": "IB111",
+        "název": "Základy programování",
+        "garant": "N. Beneš",
+        "vyučující": "N. Beneš",
+        "ukon.": "zk",
+        "rozsah": "2/2/2",
+        "kred.": "5 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "!IB113 && !NOW(IB113)",
+        "poznámka": ""
+      },
+      {
+        "kód": "IB113",
+        "název": "Úvod do programování a algoritmizace",
+        "garant": "R. Pelánek",
+        "vyučující": "R. Pelánek",
+        "ukon.": "zk",
+        "rozsah": "2/2/1",
+        "kred.": "4 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "!NOW(IB111) && !IB111 && !PB162 && !PB161 && !PB071 && !IB001 && !program(B-INF) && !program(B-PVA)",
+        "poznámka": ""
+      }
+    ],
+    "nameBald": "bez názvu",
+    "nameRegular": "alespoň 1 z 2 předmětů/podmínek"
+  },
+  {
+    "name": null,
+    "tableEl": {},
+    "prevEl": {},
+    "table": [
+      {
+        "kód": "IB114",
+        "název": "Úvod do programování a algoritmizace II",
+        "garant": "I. Černá",
+        "vyučující": "I. Černá",
+        "ukon.": "zk",
+        "rozsah": "2/1/0",
+        "kred.": "3 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "(IB111 || IB113) && !IB002 && !NOW(IB002)",
+        "poznámka": ""
+      },
+      {
+        "kód": "IV130",
+        "název": "Přínosy a rizika inteligentních systémů",
+        "garant": "J. Zlatuška",
+        "vyučující": "J. Zlatuška",
+        "ukon.": "zk",
+        "rozsah": "2/0/0",
+        "kred.": "2 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "",
+        "poznámka": ""
+      },
+      {
+        "kód": "PB007",
+        "název": "Software Engineering I",
+        "garant": "B. Bühnová",
+        "vyučující": "B. Bühnová",
+        "ukon.": "zk",
+        "rozsah": "2/2/0",
+        "kred.": "3 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "PB161 || PB162 || PV178 || PB112",
+        "poznámka": ""
+      },
+      {
+        "kód": "PB071",
+        "název": "Principy nízkoúrovňového programování",
+        "garant": "P. Švenda",
+        "vyučující": "P. Švenda",
+        "ukon.": "zk",
+        "rozsah": "2/2/1",
+        "kred.": "4 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "",
+        "poznámka": ""
+      },
+      {
+        "kód": "PB151",
+        "název": "Výpočetní systémy",
+        "garant": "M. Brandejs",
+        "vyučující": "M. Brandejs",
+        "ukon.": "zk",
+        "rozsah": "3/0/0",
+        "kred.": "3 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "! NOW(PB150)",
+        "poznámka": ""
+      }
+    ]
+  },
+  {
+    "name": "Operační systémy alespoň 6 kr.\n",
+    "tableEl": {},
+    "prevEl": {},
+    "table": [
+      {
+        "kód": "PB152",
+        "název": "Operační systémy",
+        "garant": "P. Ročkai",
+        "vyučující": "P. Ročkai",
+        "ukon.": "z",
+        "rozsah": "2/0/0",
+        "kred.": "2 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "!PB153 && !NOW(PB153)",
+        "poznámka": ""
+      },
+      {
+        "kód": "PB152cv",
+        "název": "Operační systémy - cvičení",
+        "garant": "P. Ročkai",
+        "vyučující": "A. Matoušek, P. Ročkai",
+        "ukon.": "k",
+        "rozsah": "0/2/1",
+        "kred.": "3 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "(PB153 || PB152) && (PB071 || SOUHLAS)",
+        "poznámka": ""
+      }
+    ],
+    "nameBald": "Operační systémy",
+    "nameRegular": "alespoň 6 kr."
+  },
+  {
+    "name": null,
+    "tableEl": {},
+    "prevEl": {},
+    "table": [
+      {
+        "kód": "PB156",
+        "název": "Počítačové sítě",
+        "garant": "E. Hladká",
+        "vyučující": "E. Hladká",
+        "ukon.": "zk",
+        "rozsah": "2/0/0",
+        "kred.": "2 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "",
+        "poznámka": ""
+      },
+      {
+        "kód": "PB156cv",
+        "název": "Počítačové sítě - cvičení",
+        "garant": "E. Hladká",
+        "vyučující": "E. Hladká",
+        "ukon.": "z",
+        "rozsah": "0/2/0",
+        "kred.": "2 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "",
+        "poznámka": ""
+      },
+      {
+        "kód": "PB168",
+        "název": "Základy databázových a informačních systémů",
+        "garant": "V. Dohnal",
+        "vyučující": "V. Dohnal, J. Ráček",
+        "ukon.": "zk",
+        "rozsah": "2/2/0",
+        "kred.": "3 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "!PB154 && !NOW(PB154)",
+        "poznámka": ""
+      },
+      {
+        "kód": "PV004",
+        "název": "UNIX",
+        "garant": "M. Brandejs",
+        "vyučující": "M. Brandejs",
+        "ukon.": "zk",
+        "rozsah": "2/0/0",
+        "kred.": "2 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "",
+        "poznámka": ""
+      },
+      {
+        "kód": "PV028",
+        "název": "Applied Information Systems",
+        "garant": "J. Ráček",
+        "vyučující": "J. Ráček",
+        "ukon.": "k",
+        "rozsah": "2/0/0",
+        "kred.": "2 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "",
+        "poznámka": ""
+      },
+      {
+        "kód": "PV080",
+        "název": "Information security and cryptography",
+        "garant": "V. Matyáš",
+        "vyučující": "V. Matyáš, M. Sýs, M. Kumpošt, P. Švenda, P. Čeleda, M. Ukrop, P. Loutocký",
+        "ukon.": "zk",
+        "rozsah": "2/2",
+        "kred.": "3 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "",
+        "poznámka": ""
+      },
+      {
+        "kód": "PV157",
+        "název": "Autentizace a řízení přístupu",
+        "garant": "V. Matyáš",
+        "vyučující": "V. Matyáš, P. Loutocký",
+        "ukon.": "zk",
+        "rozsah": "2/0/0",
+        "kred.": "2 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "",
+        "poznámka": ""
+      },
+      {
+        "kód": "PV175",
+        "název": "Správa systémů MS Windows I",
+        "garant": "E. Hladká",
+        "vyučující": "L. Dušek, L. Fázik",
+        "ukon.": "k",
+        "rozsah": "1/2/0",
+        "kred.": "3 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "",
+        "poznámka": ""
+      },
+      {
+        "kód": "PV276",
+        "název": "Seminář simulace kyberútoků",
+        "garant": "J. Vykopal",
+        "vyučující": "J. Vykopal, P. Čeleda",
+        "ukon.": "k",
+        "rozsah": "0/2/1",
+        "kred.": "3 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "(PB156 && PV004) || SOUHLAS",
+        "poznámka": ""
+      },
+      {
+        "kód": "VB001",
+        "název": "English Exam",
+        "garant": "E. Rudolfová",
+        "vyučující": "E. Rudolfová, M. Sekanina Vavřinová, Z. Vašíčková, A. Zita",
+        "ukon.": "zk",
+        "rozsah": "0/0/0",
+        "kred.": "1",
+        "semestr": "",
+        "prerekvizity": "",
+        "poznámka": ""
+      },
+      {
+        "kód": "SB200",
+        "název": "Bakalářská stáž - Kyberbezpečnost",
+        "garant": "J. Ráček",
+        "vyučující": "J. Ráček, L. Válová",
+        "ukon.": "z",
+        "rozsah": "0/0/0 Stáž v minimálním rozsahu 12 týdnů.",
+        "kred.": "20 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "(!rocnik(1) && !rocnik(2)) && SOUHLAS",
+        "poznámka": ""
+      },
+      {
+        "kód": "PrF:BI301K",
+        "název": "Úvod do práva ICT II\n[ nevypisuje se v daném semestru: jaro 2024 ]",
+        "garant": "J. Míšek",
+        "vyučující": "J. Harašta, P. Loutocký, J. Míšek, M. Myška",
+        "ukon.": "k",
+        "rozsah": "2/1/0",
+        "kred.": "4",
+        "semestr": "",
+        "prerekvizity": "!obor(PR) && !obor(PR01) && !program(N-VS)",
+        "poznámka": ""
+      },
+      {
+        "kód": "PrF:BVV03K",
+        "název": "Kyberkriminalita a kybernetická bezpečnost",
+        "garant": "R. Polčák",
+        "vyučující": "F. Kasl, P. Loutocký, J. Míšek, V. Stupka, J. Vostoupal",
+        "ukon.": "k",
+        "rozsah": "0/2/0",
+        "kred.": "3",
+        "semestr": "",
+        "prerekvizity": "!obor(PR) && !obor(PR01) && !program(N-VS)",
+        "poznámka": ""
+      },
+      {
+        "kód": "FSS:BSSb1101",
+        "název": "Úvod do bezpečnostních a strategických studií\n[ nevypisuje se v daném semestru: jaro 2024 ]",
+        "garant": "M. Mareš",
+        "vyučující": "V. Divišová, J. Kleiner, L. Konečná",
+        "ukon.": "zk",
+        "rozsah": "1/1/0",
+        "kred.": "6",
+        "semestr": "",
+        "prerekvizity": "!BSS101 && !NOW(BSS101)",
+        "poznámka": ""
+      },
+      {
+        "kód": "FSS:BSSb1103",
+        "název": "Bezpečnostní politika ČR",
+        "garant": "M. Mareš",
+        "vyučující": "M. Mareš, P. Mlejnková",
+        "ukon.": "zk",
+        "rozsah": "1/1/0",
+        "kred.": "6",
+        "semestr": "",
+        "prerekvizity": "!BSS103 && !NOW(BSS103)",
+        "poznámka": ""
+      },
+      {
+        "kód": "FSS:BSSb1152",
+        "název": "Kybernetická válka\n[ nevypisuje se v daném semestru: jaro 2024 ]",
+        "garant": "J. Kraus",
+        "vyučující": "J. Drmola, J. Kraus",
+        "ukon.": "zk",
+        "rozsah": "2/0/0",
+        "kred.": "4",
+        "semestr": "",
+        "prerekvizity": "!BSS152 && !NOW(BSS152)",
+        "poznámka": ""
+      }
+    ]
+  },
+  {
+    "name": "Sazba a akademické psaní alespoň 1 z 3 předmětů/podmínek\n",
+    "tableEl": {},
+    "prevEl": {},
+    "table": [
+      {
+        "kód": "PB029",
+        "název": "Elektronická příprava dokumentů",
+        "garant": "P. Sojka",
+        "vyučující": "P. Sojka, V. Starý Novotný",
+        "ukon.": "zk",
+        "rozsah": "2/1/0",
+        "kred.": "3 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "",
+        "poznámka": ""
+      },
+      {
+        "kód": "VB000",
+        "název": "Základy odborného stylu",
+        "garant": "A. Horák",
+        "vyučující": "H. Žižková, Z. Nevěřilová, M. Stará, P. Šmerk",
+        "ukon.": "k",
+        "rozsah": "1/1/0",
+        "kred.": "2 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "NOW(SBAPR) || (1422:BI1000Z)",
+        "poznámka": ""
+      },
+      {
+        "kód": "VB000Eng",
+        "název": "Introduction to Academic Writing",
+        "garant": "E. Rudolfová",
+        "vyučující": "A. Zita",
+        "ukon.": "k",
+        "rozsah": "1/1/0",
+        "kred.": "2 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "NOW(SBAPR)",
+        "poznámka": ""
+      }
+    ],
+    "nameBald": "Sazba a akademické psaní",
+    "nameRegular": "alespoň 1 z 3 předmětů/podmínek"
+  },
+  {
+    "name": "Programování alespoň 1 z 3 předmětů/podmínek",
+    "tableEl": {},
+    "prevEl": {},
+    "table": [
+      {
+        "kód": "PB112",
+        "název": "Základy objektově orientovaného programování v jazyce Java",
+        "garant": "R. Ošlejšek",
+        "vyučující": "R. Ošlejšek, T. Pitner, J. Plhák",
+        "ukon.": "zk",
+        "rozsah": "2/2/0",
+        "kred.": "3 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "!(PB162) && ! NOW(PB162)",
+        "poznámka": ""
+      },
+      {
+        "kód": "PB161",
+        "název": "Programování v jazyce C++",
+        "garant": "N. Beneš",
+        "vyučující": "N. Beneš, P. Ročkai",
+        "ukon.": "zk",
+        "rozsah": "2/2/0",
+        "kred.": "3 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "PB006",
+        "poznámka": ""
+      },
+      {
+        "kód": "PB162",
+        "název": "Programování v jazyce Java",
+        "garant": "T. Pitner",
+        "vyučující": "T. Pitner, R. Ošlejšek",
+        "ukon.": "zk",
+        "rozsah": "2/2/0",
+        "kred.": "3 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "PB006 && ! PB112 && ! NOW(PB112)",
+        "poznámka": ""
+      }
+    ],
+    "nameBald": "Programování",
+    "nameRegular": "alespoň 1 z 3 předmětů/podmínek"
+  },
+  {
+    "name": "Kyberbezpečnost alespoň 1 z 2 předmětů/podmínek",
+    "tableEl": {},
+    "prevEl": {},
+    "table": [
+      {
+        "kód": "PV017",
+        "název": "Řízení informační bezpečnosti",
+        "garant": "V. Matyáš",
+        "vyučující": "P. Loutocký, K. Malinka, V. Matyáš",
+        "ukon.": "zk",
+        "rozsah": "1/0/0",
+        "kred.": "1 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "",
+        "poznámka": ""
+      },
+      {
+        "kód": "PV210",
+        "název": "Kyberbezpečnost v organizaci",
+        "garant": "J. Vykopal",
+        "vyučující": "J. Vykopal, M. Laštovička, P. Čeleda",
+        "ukon.": "k",
+        "rozsah": "2/0/2",
+        "kred.": "3 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "PV080",
+        "poznámka": ""
+      }
+    ],
+    "nameBald": "Kyberbezpečnost",
+    "nameRegular": "alespoň 1 z 2 předmětů/podmínek"
+  },
+  {
+    "name": "Angličtina alespoň 2 kr.",
+    "tableEl": {},
+    "prevEl": {},
+    "table": [
+      {
+        "kód": "VB035",
+        "název": "English I",
+        "garant": "E. Rudolfová",
+        "vyučující": "I. Tulajová, L. Procházková, E. Rudolfová, M. Sekanina Vavřinová, A. Zita",
+        "ukon.": "z",
+        "rozsah": "0/2/0",
+        "kred.": "1",
+        "semestr": "",
+        "prerekvizity": "",
+        "poznámka": ""
+      },
+      {
+        "kód": "VB036",
+        "název": "English II",
+        "garant": "E. Rudolfová",
+        "vyučující": "E. Rudolfová, M. Sekanina Vavřinová, A. Zita",
+        "ukon.": "z",
+        "rozsah": "0/2/0",
+        "kred.": "2",
+        "semestr": "",
+        "prerekvizity": "VB035 || souhlas",
+        "poznámka": ""
+      },
+      {
+        "kód": "VV064",
+        "název": "Academic and Professional Skills in English for IT",
+        "garant": "E. Rudolfová",
+        "vyučující": "A. Zita",
+        "ukon.": "zk",
+        "rozsah": "0/2/0",
+        "kred.": "2 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "VB001 || program(N-UCI)",
+        "poznámka": ""
+      }
+    ],
+    "nameBald": "Angličtina",
+    "nameRegular": "alespoň 2 kr."
+  },
+  {
+    "name": null,
+    "tableEl": {},
+    "prevEl": {},
+    "table": [
+      {
+        "kód": "SBPrip",
+        "název": "Opakování před SBZZ",
+        "garant": "J. Barnat",
+        "vyučující": "J. Barnat",
+        "ukon.": "z",
+        "rozsah": "0/0/1",
+        "kred.": "1 (plus ukončení)",
+        "semestr": "",
+        "prerekvizity": "NOW(SZB)",
+        "poznámka": ""
+      },
+      {
+        "kód": "SBAPR",
+        "název": "Bakalářská práce",
+        "garant": "D. Svoboda",
+        "vyučující": "D. Svoboda\n[ hodnotí všichni vyučující pracoviště ]",
+        "ukon.": "z",
+        "rozsah": "0/0/0",
+        "kred.": "10 (max 10 kred)",
+        "semestr": "",
+        "prerekvizity": "",
+        "poznámka": ""
+      }
+    ]
+  }
 ]
