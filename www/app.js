@@ -8,12 +8,12 @@ TODO List:
 3. CHeck on bigger data
 4. PushIfNeeded function
 5. Contains function
+6. Draw Souhlas and other stuff like that
 
 */
 
 const DATA = {
     'PV008': {
-        code: 'PV008',
         prerequisites: { // Either modifier or code
             modifier: 'or',
             values: [
@@ -28,6 +28,11 @@ const DATA = {
                     now: false,
                 },
                 {
+                    code: 'IB006',
+                    not: true,
+                    now: false,
+                },
+                {
                     code: 'SOUHLAS',
                     not: false,
                     now: false,
@@ -35,12 +40,10 @@ const DATA = {
             ],
         },
     },
-    'IB005': {
-        code: 'IB005',
-    },
+    'IB005': { },
+    'IB006': { },
 
     '_PV008': {
-        code: '_PV008',
         prerequisites: { // Either modifier or code
             modifier: 'or',
             values: [
@@ -62,11 +65,8 @@ const DATA = {
             ],
         },
     },
-    '_IB005': {
-        code: '_IB005',
-    },
+    '_IB005': { },
     '_LAYER3': {
-        code: '_LAYER3',
         prerequisites: {
             code: '_PV008',
             not: true,
@@ -74,6 +74,8 @@ const DATA = {
         },
     }
 };
+
+const main = document.getElementById('main');
 
 function getAllPrerequisitesSubjects(prerequisites) {
     const allSubjects = [];
@@ -109,12 +111,13 @@ function isSmallArrayInBig(small, big) {
     return true;
 }
 
-function parseDataToGoodFormat(data) {
+function prepareData(data) {
     data = JSON.parse(JSON.stringify(data)); // Deep clone
 
     // prerequisites array (both directions)
     for (const code in data) {
         const subject = data[code];
+        subject.code = code;
 
         const allPrerequisutes = getAllPrerequisitesSubjects(subject.prerequisites);
         subject.prerequisitesArray = allPrerequisutes.filter(x => data[x]);
@@ -177,11 +180,47 @@ function parseDataToGoodFormat(data) {
 
     console.log(data);
 
+    return data;
 }
 
 function draw(data) {
-    //
+
+    const SUBJECTS_Y_DIFFERENCE = 120;
+    const GROUPS_Y_MARGIN = 200;
+    const SUBJECTS_X_DIFFERENCE = 250;
+
+    let marginTop = 10;
+    for (let group = 1; Object.values(data).find(x => x.group === group); group++) {
+        const subjectsInGroup = Object.values(data).filter(x => x.group === group);
+
+        let biggestLayer = 0;
+        for (let layer = 1; subjectsInGroup.find(x => x.layer === layer); layer++) {
+            const subjectsInLayer = subjectsInGroup.filter(x => x.layer === layer);
+            if (subjectsInLayer.length > biggestLayer) biggestLayer = subjectsInLayer.length;
+
+            
+            for (let i = 0; i < subjectsInLayer.length; i++) {
+                const subject = subjectsInLayer[i];
+                const div = document.createElement('div');
+                div.classList.add('subject');
+                div.innerText = subject.code;
+                div.subject = subject;
+                subject.div = div;
+
+                const x = 20 + (layer - 1) * SUBJECTS_X_DIFFERENCE;
+                const y = marginTop + i * SUBJECTS_Y_DIFFERENCE;
+
+                div.style.left = x + 'px';
+                div.style.top = y + 'px';
+
+                main.appendChild(div);
+            }
+
+        };
+
+        marginTop += (biggestLayer * SUBJECTS_Y_DIFFERENCE + GROUPS_Y_MARGIN);
+    };
 }
 
-const data = parseDataToGoodFormat(DATA);
+const data = prepareData(DATA);
 draw(data);
