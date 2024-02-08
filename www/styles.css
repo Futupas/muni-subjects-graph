@@ -12,6 +12,8 @@
     border: 1px solid black;
     width: 200px;
     height: 100px;
+    z-index: 2;
+    background-color: white;
 }
 
 .line {
@@ -25,7 +27,9 @@
     transform-origin: left center;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
 .line > span {
     background-color:white;
+    padding: 0px 5px;
 }

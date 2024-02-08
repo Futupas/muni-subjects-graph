@@ -28,7 +28,7 @@
         for (let rowI = 1; rowI < trs.length; rowI++) {
             const row = {};
             const cols = Array.from(trs[rowI].querySelectorAll('td')).map(x => x.innerText);
-            for (let colI = 1; colI < columnNames.length; colI++) {
+            for (let colI = 0; colI < columnNames.length; colI++) {
                 row[columnNames[colI]] = cols[colI];
             }
             table.push(row);

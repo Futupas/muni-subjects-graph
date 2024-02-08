@@ -10,71 +10,9 @@ TODO List:
 5. Contains function
 6. Draw Souhlas and other stuff like that
 7. And/Or in prerequisites
+8. CSS improvements
 
 */
-
-const DATA = {
-    'PV008': {
-        prerequisites: { // Either modifier or code
-            modifier: 'or',
-            values: [
-                {
-                    code: 'IB005',
-                    not: true,
-                    now: false,
-                },
-                {
-                    code: 'IB005',
-                    not: true,
-                    now: false,
-                },
-                {
-                    code: 'IB006',
-                    not: true,
-                    now: false,
-                },
-                {
-                    code: 'SOUHLAS',
-                    not: false,
-                    now: false,
-                },
-            ],
-        },
-    },
-    'IB005': { },
-    'IB006': { },
-
-    '_PV008': {
-        prerequisites: { // Either modifier or code
-            modifier: 'or',
-            values: [
-                {
-                    code: '_IB005',
-                    not: true,
-                    now: false,
-                },
-                {
-                    code: '_IB005',
-                    not: true,
-                    now: false,
-                },
-                {
-                    code: 'SOUHLAS',
-                    not: false,
-                    now: false,
-                },
-            ],
-        },
-    },
-    '_IB005': { },
-    '_LAYER3': {
-        prerequisites: {
-            code: '_PV008',
-            not: true,
-            now: false,
-        },
-    }
-};
 
 const main = document.getElementById('main');
 
@@ -187,8 +125,8 @@ function prepareData(data) {
 function draw(data) {
 
     const SUBJECTS_Y_DIFFERENCE = 120;
-    const GROUPS_Y_MARGIN = 200;
-    const SUBJECTS_X_DIFFERENCE = 250;
+    const GROUPS_Y_MARGIN = 50;
+    const SUBJECTS_X_DIFFERENCE = 350;
     const DIV_WIDTH = 200;
     const DIV_HEIGHT = 100;
 
@@ -232,6 +170,11 @@ function draw(data) {
                 const div = document.createElement('div');
                 div.classList.add('subject');
                 div.innerText = subject.code;
+
+                if (subject.name) {
+                    div.innerText += '\n' + subject.name;
+                }
+
                 div.subject = subject;
                 subject.div = div;
 
