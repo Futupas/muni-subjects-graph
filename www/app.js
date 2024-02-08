@@ -9,6 +9,7 @@ TODO List:
 4. PushIfNeeded function
 5. Contains function
 6. Draw Souhlas and other stuff like that
+7. And/Or in prerequisites
 
 */
 
@@ -188,6 +189,33 @@ function draw(data) {
     const SUBJECTS_Y_DIFFERENCE = 120;
     const GROUPS_Y_MARGIN = 200;
     const SUBJECTS_X_DIFFERENCE = 250;
+    const DIV_WIDTH = 200;
+    const DIV_HEIGHT = 100;
+
+    function drawLine(subject, prerequisiteCode, text) {
+        const prerequisite = data[prerequisiteCode];
+
+        const x1 = prerequisite.x + DIV_WIDTH;
+        const y1 = prerequisite.y + DIV_HEIGHT / 2;
+        const x2 = subject.x;
+        const y2 = subject.y + DIV_HEIGHT / 2;
+
+        const length = Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
+        const rotate = Math.atan2(y2 - y1, x2 - x1);
+
+        const div = document.createElement('div');
+        div.classList.add('line');
+        div.style.width = length + 'px';
+        div.style.transform = `rotate(${rotate}rad)`;
+        div.style.left = x1 + 'px';
+        div.style.top = y1 + 'px';
+
+        const span = document.createElement('span');
+        span.innerText = text;
+        div.appendChild(span);
+        main.appendChild(div);
+    }
+
 
     let marginTop = 10;
     for (let group = 1; Object.values(data).find(x => x.group === group); group++) {
@@ -196,9 +224,9 @@ function draw(data) {
         let biggestLayer = 0;
         for (let layer = 1; subjectsInGroup.find(x => x.layer === layer); layer++) {
             const subjectsInLayer = subjectsInGroup.filter(x => x.layer === layer);
+
             if (subjectsInLayer.length > biggestLayer) biggestLayer = subjectsInLayer.length;
 
-            
             for (let i = 0; i < subjectsInLayer.length; i++) {
                 const subject = subjectsInLayer[i];
                 const div = document.createElement('div');
@@ -212,6 +240,13 @@ function draw(data) {
 
                 div.style.left = x + 'px';
                 div.style.top = y + 'px';
+
+                subject.x = x;
+                subject.y = y;
+
+                for(const prerequisiteCode of subject.prerequisitesArray) {
+                    drawLine(subject, prerequisiteCode, 'sdsd'); //todo something better
+                }
 
                 main.appendChild(div);
             }

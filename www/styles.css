@@ -13,3 +13,19 @@
     width: 200px;
     height: 100px;
 }
+
+.line {
+    position: absolute;
+    display: inline-flex;
+    border: 1px solid blue;
+    text-align: center;
+    height: 0px;
+    background-color:blue;
+    overflow: visible;
+    transform-origin: left center;
+    align-items: center;
+    justify-content: center;
+}
+.line > span {
+    background-color:white;
+}
