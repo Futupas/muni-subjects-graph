@@ -19,7 +19,8 @@
             "code": "PV080",
             "name": "Information security and cryptography",
             "credits": 3,
-            "rozsah": "2\/2"
+            "rozsah": "2\/2",
+            "link": "https://is.muni.cz/predmet/fi/PV080"
         },
         {
             "faculty": "PrF",
@@ -27,7 +28,8 @@
             "name": "Úvod do práva ICT II",
             "credits": 4,
             "rozsah": "2\/1\/0",
-            "prerequisutes": "!obor(PR) && !obor(PR01) && !program(N-VS)"
+            "prerequisutes": "!obor(PR) && !obor(PR01) && !program(N-VS)",
+            "link": "https://is.muni.cz/predmet/law/BI301K"
         },
         {
             "group": 1,
@@ -36,7 +38,8 @@
             "name": "Základy objektově orientovaného programování v jazyce Java",
             "credits": 3,
             "rozsah": "2\/2\/0",
-            "prerequisutes": "!(PB162) && ! NOW(PB162)"
+            "prerequisutes": "!(PB162) && ! NOW(PB162)",
+            "link": "https://is.muni.cz/predmet/fi/PB112"
         }
     ]
 }
