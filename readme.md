@@ -33,7 +33,7 @@ JS:
 Python:
 1. Make basic JSON processer that takes "raw" JSON, and makes a good useful JSON file with all the connections etc **(Python)** - Sofia
 2. Make prerequisites parser. It takes a text and returns a python/JSON object that represents graph. Basically it's a string-to-graph parser **(Python)** - Li
-3. Make HTML parser on Python to automatize manual processes **(Python)**
+3. Make HTML parser on Python to automatize manual processes **(Python)** - Misha
 
 
 

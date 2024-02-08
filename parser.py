@@ -25,12 +25,14 @@ main = soup.find('main', id='app_content')
 # for child in ch1:
 #     print(child.name)
 
+print(len(list(main.children)))
 
-for child in main.children:
+for child in list(main.children):
     # Check if the child is a tag (element)
-    if child.name is not None:
-        # Print the tag name
-        print("Tag name:", child.name)
+    print("Tag name:", child.name)
+    # if child.name is not None:
+    #     # Print the tag name
+    #     print("Tag name:", child.name)
 
 
 
