@@ -25,12 +25,15 @@ Source: https://is.muni.cz/predmety/sablony_tisk?fakulta=1433;obdobi=9224;uzel=2
 
 ## Tasks
 
+JS: 
 1. Write HTML to JSON parsers **(JavaScript)**
-1. Write final JSON visualizer **(HTML+JavaScript)**
-1. Make and implement design **(HTML+CSS+JavaScript)**
-1. Make basic JSON processer that takes "raw" JSON, and makes a good useful JSON file with all the connections etc **(Python)**
-1. Make prerequisites parser. It takes a text and returns a python/JSON object that represents graph. Basically it's a string-to-graph parser **(Python)**
-1. Make HTML parser on Python to automatize manual processes **(Python)**
+2. Write final JSON visualizer **(HTML+JavaScript)**
+3. Make and implement design **(HTML+CSS+JavaScript)**
+
+Python:
+1. Make basic JSON processer that takes "raw" JSON, and makes a good useful JSON file with all the connections etc **(Python)** - Sofia
+2. Make prerequisites parser. It takes a text and returns a python/JSON object that represents graph. Basically it's a string-to-graph parser **(Python)** - Li
+3. Make HTML parser on Python to automatize manual processes **(Python)**
 
 
 
