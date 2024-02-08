@@ -57,13 +57,45 @@ function isSmallArrayInBig(small, big) {
 function prepareData(data) {
     data = JSON.parse(JSON.stringify(data)); // Deep clone
 
+    // Get ALL nodes
+    {
+        function parseNode(node) {
+            if (!node) {
+                console.warn('Undefined node');
+                return;
+            }
+    
+            if (node.modifier) {
+                for (const newNode of node.values) {
+                    parseNode(newNode);
+                }
+            } else if (node.code) {
+                const code = node.code;
+                // We remove NOTs to avoid circular dependency
+                if (node.not !== true && !data[code]) {
+                    data[code] = {
+                        code,
+                        name: code,
+                    };
+                }
+            } else {
+                console.warn('Unknown node', node);
+            }
+        }
+
+        for (const code in data) {
+            const subject = data[code];
+            parseNode(subject.prerequisites);
+        }
+    }
+
     // prerequisites array (both directions)
     for (const code in data) {
         const subject = data[code];
         subject.code = code;
 
         const allPrerequisutes = getAllPrerequisitesSubjects(subject.prerequisites).filter(x => x !== code);
-        subject.prerequisitesArray = allPrerequisutes.filter(x => data[x]);
+        subject.prerequisitesArray = allPrerequisutes; // allPrerequisutes.filter(x => data[x]);
 
         for (const prerequisite of allPrerequisutes) {
             const prerequisiteSubject = data[prerequisite];
