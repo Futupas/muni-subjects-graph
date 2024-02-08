@@ -1,5 +1,16 @@
 'use strict';
 
+/*
+TODO List:
+
+1. Refactor DATA
+2. Refactor isSmallInBig
+3. CHeck on bigger data
+4. PushIfNeeded function
+5. Contains function
+
+*/
+
 const DATA = {
     'PV008': {
         code: 'PV008',
@@ -54,6 +65,14 @@ const DATA = {
     '_IB005': {
         code: '_IB005',
     },
+    '_LAYER3': {
+        code: '_LAYER3',
+        prerequisites: {
+            code: '_PV008',
+            not: true,
+            now: false,
+        },
+    }
 };
 
 function getAllPrerequisitesSubjects(prerequisites) {
@@ -93,7 +112,7 @@ function isSmallArrayInBig(small, big) {
 function parseDataToGoodFormat(data) {
     data = JSON.parse(JSON.stringify(data)); // Deep clone
 
-    // isPrerequisuteFor
+    // prerequisites array (both directions)
     for (const code in data) {
         const subject = data[code];
 
@@ -128,10 +147,33 @@ function parseDataToGoodFormat(data) {
 
             currentLayer++;
         }
-        
     }
 
     // Make groups
+    {
+        function setNodeAndRelativesGroup(node, parsed, group) {
+            parsed.push(node.code);
+            node.group = group;
+            const subjects = [
+                ...(node.prerequisitesArray || []),
+                ...(node.isPrerequisiteFor || []),
+            ]
+            .filter(x => !parsed.find(y => y === x))
+            .map(x => data[x]);
+
+            for (const subject of subjects) {
+                setNodeAndRelativesGroup(subject, parsed, group);
+            }
+        }
+
+        let firstUngrouped = Object.values(data).find(x => !x.group);
+        let group = 1;
+        while (firstUngrouped) {
+            setNodeAndRelativesGroup(firstUngrouped, [], group);
+            firstUngrouped = Object.values(data).find(x => !x.group);
+            group++;
+        }
+    }
 
     console.log(data);
 
