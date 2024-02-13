@@ -8,40 +8,43 @@
         "faculty":"FI",
         "code": "MB141",
         "name": "Lineární algebra a diskrétní matematika",
-        "garant": "P. Hasil",
-        "vyučující": "D. Kruml",
         "conclusion": "zk",
-        "extend": "2/2/0",
         "credits": 3,
-        "semestr": "",
         "prerequisutes": "!NOW(MB151) && ( !MB151 || !MB154 ) && ( !MB101 || !MB104 )",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/MB141",
+        "additionalData": {
+          "rozsah": "2/2/0",
+          "garant": "P. Hasil",
+          "vyučující": "D. Kruml"
+        }
       },
       {
         "faculty":"FI",
         "code": "IB000",
         "name": "Matematické základy informatiky",
-        "garant": "P. Hliněný",
-        "vyučující": "P. Hliněný",
         "conclusion": "zk",
-        "extend": "2/2/1",
         "credits": 4,
-        "semestr": "",
         "prerequisutes": "",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/IB000",
+        "additionalData": {  
+          "rozsah": "2/2/1",
+          "garant": "P. Hliněný",
+          "vyučující": "P. Hliněný"
+        }
       },
       {
         "faculty":"FI",
         "code": "IB110",
         "name": "Základy informatiky",
-        "garant": "P. Novotný",
-        "vyučující": "P. Novotný",
         "conclusion": "zk",
-        "extend": "2/2/0",
         "credits": 3,
-        "semestr": "",
         "prerequisutes": "!IB005 || !IB107",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/IB110",
+        "additionalData": {
+          "rozsah": "2/2/0",
+          "garant": "P. Novotný",
+          "vyučující": "P. Novotný"
+        }
       }
     ]
   },
@@ -54,27 +57,29 @@
         "faculty":"FI",
         "code": "IB111",
         "name": "Základy programování",
-        "garant": "N. Beneš",
-        "vyučující": "N. Beneš",
         "conclusion": "zk",
-        "extend": "2/2/2",
         "credits": 5,
-        "semestr": "",
         "prerequisutes": "!IB113 && !NOW(IB113)",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/IB111",
+        "additionalData": {
+          "rozsah": "2/2/2",
+          "garant": "N. Beneš",
+          "vyučující": "N. Beneš"
+        }
       },
       {
         "faculty":"FI",
         "code": "IB113",
         "name": "Úvod do programování a algoritmizace",
-        "garant": "R. Pelánek",
-        "vyučující": "R. Pelánek",
         "conclusion": "zk",
-        "extend": "2/2/1",
         "credits": 4,
-        "semestr": "",
         "prerequisutes": "!NOW(IB111) && !IB111 && !PB162 && !PB161 && !PB071 && !IB001 && !program(B-INF) && !program(B-PVA)",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/IB113",
+        "additionalData": {
+          "rozsah": "2/2/1",
+          "garant": "R. Pelánek",
+          "vyučující": "R. Pelánek"
+        }
       }
     ],
     "nameBald": "bez názvu",
@@ -89,66 +94,71 @@
         "faculty":"FI",
         "code": "IB114",
         "name": "Úvod do programování a algoritmizace II",
-        "garant": "I. Černá",
-        "vyučující": "I. Černá",
         "conclusion": "zk",
-        "extend": "2/1/0",
         "credits": 4,
-        "semestr": "",
         "prerequisutes": "(IB111 || IB113) && !IB002 && !NOW(IB002)",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/IB114",
+        "additionalData": {
+          "rozsah": "2/1/0",
+          "garant": "I. Černá",
+          "vyučující": "I. Černá"
+        }
       },
       {
         "faculty":"FI",
         "code": "IV130",
         "name": "Přínosy a rizika inteligentních systémů",
-        "garant": "J. Zlatuška",
-        "vyučující": "J. Zlatuška",
         "conclusion": "zk",
-        "extend": "2/0/0",
-        "credits": "2 (plus ukončení)",
-        "semestr": "",
+        "credits": 2,
         "prerequisutes": "",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/IV130",
+        "additionalData": {
+          "rozsah": "2/0/0",
+          "garant": "J. Zlatuška",
+          "vyučující": "J. Zlatuška"
+        }
       },
       {
         "faculty":"FI",
         "code": "PB007",
         "name": "Software Engineering I",
-        "garant": "B. Bühnová",
-        "vyučující": "B. Bühnová",
         "conclusion": "zk",
-        "extend": "2/2/0",
-        "credits": "3 (plus ukončení)",
-        "semestr": "",
+        "credits": 3,
         "prerequisutes": "PB161 || PB162 || PV178 || PB112",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/PB007",
+        "additionalData": {
+          "rozsah": "2/2/0",
+          "garant": "B. Bühnová",
+          "vyučující": "B. Bühnová"
+        }
       },
       {
         "faculty":"FI",
         "code": "PB071",
         "name": "Principy nízkoúrovňového programování",
-        "garant": "P. Švenda",
-        "vyučující": "P. Švenda",
         "conclusion": "zk",
-        "extend": "2/2/1",
-        "credits": "4 (plus ukončení)",
-        "semestr": "",
+        "credits": 4,
         "prerequisutes": "",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/PB071",
+        "additionalData": {
+          "rozsah": "2/2/1",
+          "garant": "P. Švenda",
+          "vyučující": "P. Švenda"
+        }
       },
       {
         "faculty":"FI",
         "code": "PB151",
         "name": "Výpočetní systémy",
-        "garant": "M. Brandejs",
-        "vyučující": "M. Brandejs",
         "conclusion": "zk",
-        "extend": "3/0/0",
-        "credits": "3 (plus ukončení)",
-        "semestr": "",
+        "credits": 3,
         "prerequisutes": "! NOW(PB150)",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/PB151",
+        "additionalData": {
+          "rozsah": "3/0/0",
+          "garant": "M. Brandejs",
+          "vyučující": "M. Brandejs"
+        }
       }
     ]
   },
@@ -161,27 +171,29 @@
         "faculty":"FI",
         "code": "PB152",
         "name": "Operační systémy",
-        "garant": "P. Ročkai",
-        "vyučující": "P. Ročkai",
         "conclusion": "z",
-        "extend": "2/0/0",
-        "credits": "2 (plus ukončení)",
-        "semestr": "",
+        "credits": 2,
         "prerequisutes": "!PB153 && !NOW(PB153)",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/PB152",
+        "additionalData": {
+          "rozsah": "2/0/0",
+          "garant": "P. Ročkai",
+          "vyučující": "P. Ročkai"
+        }
       },
       {
         "faculty":"FI",
         "code": "PB152cv",
         "name": "Operační systémy - cvičení",
-        "garant": "P. Ročkai",
-        "vyučující": "A. Matoušek, P. Ročkai",
         "conclusion": "k",
-        "extend": "0/2/1",
-        "credits": "3 (plus ukončení)",
-        "semestr": "",
+        "credits": 3,
         "prerequisutes": "(PB153 || PB152) && (PB071 || SOUHLAS)",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/PB152cv",
+        "additionalData": {
+          "rozsah": "0/2/1",
+          "garant": "P. Ročkai",
+          "vyučující": "A. Matoušek, P. Ročkai"
+        }
       }
     ],
     "nameBald": "Operační systémy",
@@ -196,209 +208,225 @@
         "faculty":"FI",
         "code": "PB156",
         "name": "Počítačové sítě",
-        "garant": "E. Hladká",
-        "vyučující": "E. Hladká",
         "conclusion": "zk",
-        "extend": "2/0/0",
-        "credits": "2 (plus ukončení)",
-        "semestr": "",
+        "credits": 2,
         "prerequisutes": "",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/PB156",
+        "additionalData": {
+          "rozsah": "2/0/0",
+          "garant": "E. Hladká",
+          "vyučující": "E. Hladká"
+        }
       },
       {
         "faculty":"FI",
         "code": "PB156cv",
         "name": "Počítačové sítě - cvičení",
-        "garant": "E. Hladká",
-        "vyučující": "E. Hladká",
         "conclusion": "z",
-        "extend": "0/2/0",
-        "credits": "2 (plus ukončení)",
-        "semestr": "",
+        "credits": 2,
         "prerequisutes": "",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/PB156cv",
+        "additionalData": {
+          "rozsah": "0/2/0",
+          "garant": "E. Hladká",
+          "vyučující": "E. Hladká"
+        }
       },
       {
         "faculty":"FI",
         "code": "PB168",
         "name": "Základy databázových a informačních systémů",
-        "garant": "V. Dohnal",
-        "vyučující": "V. Dohnal, J. Ráček",
         "conclusion": "zk",
-        "extend": "2/2/0",
-        "credits": "3 (plus ukončení)",
-        "semestr": "",
+        "credits": 3,
         "prerequisutes": "!PB154 && !NOW(PB154)",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/PB168",
+        "additionalData": {
+          "rozsah": "2/2/0",
+          "garant": "V. Dohnal",
+          "vyučující": "V. Dohnal, J. Ráček"
+        }
       },
       {
         "faculty":"FI",
         "code": "PV004",
         "name": "UNIX",
-        "garant": "M. Brandejs",
-        "vyučující": "M. Brandejs",
         "conclusion": "zk",
-        "extend": "2/0/0",
-        "credits": "2 (plus ukončení)",
-        "semestr": "",
+        "credits": 2,
         "prerequisutes": "",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/PV004",
+        "additionalData": {
+          "rozsah": "2/0/0",
+          "garant": "M. Brandejs",
+          "vyučující": "M. Brandejs"
+        }
       },
       {
         "faculty":"FI",
         "code": "PV028",
         "name": "Applied Information Systems",
-        "garant": "J. Ráček",
-        "vyučující": "J. Ráček",
         "conclusion": "k",
-        "extend": "2/0/0",
-        "credits": "2 (plus ukončení)",
-        "semestr": "",
+        "credits": 2,
         "prerequisutes": "",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/PV028",
+        "additionalData": {
+          "rozsah": "2/0/0",
+          "garant": "J. Ráček",
+          "vyučující": "J. Ráček"
+        }
       },
       {
         "faculty":"FI",
         "code": "PV080",
         "name": "Information security and cryptography",
-        "garant": "V. Matyáš",
-        "vyučující": "V. Matyáš, M. Sýs, M. Kumpošt, P. Švenda, P. Čeleda, M. Ukrop, P. Loutocký",
         "conclusion": "zk",
-        "extend": "2/2",
-        "credits": "3 (plus ukončení)",
-        "semestr": "",
+        "credits": 3,
         "prerequisutes": "",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/PV080",
+        "additionalData": {
+          "rozsah": "2/2",
+          "garant": "V. Matyáš",
+          "vyučující": "V. Matyáš, M. Sýs, M. Kumpošt, P. Švenda, P. Čeleda, M. Ukrop, P. Loutocký"
+        }
       },
       {
         "faculty":"FI",
         "code": "PV157",
         "name": "Autentizace a řízení přístupu",
-        "garant": "V. Matyáš",
-        "vyučující": "V. Matyáš, P. Loutocký",
         "conclusion": "zk",
-        "extend": "2/0/0",
-        "credits": "2 (plus ukončení)",
-        "semestr": "",
+        "credits": 2,
         "prerequisutes": "",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/PV157",
+        "additionalData": {
+          "rozsah": "2/0/0",
+          "garant": "V. Matyáš",
+          "vyučující": "V. Matyáš, P. Loutocký"
+        }
       },
       {
         "faculty":"FI",
         "code": "PV175",
         "name": "Správa systémů MS Windows I",
-        "garant": "E. Hladká",
-        "vyučující": "L. Dušek, L. Fázik",
         "conclusion": "k",
-        "extend": "1/2/0",
-        "credits": "3 (plus ukončení)",
-        "semestr": "",
+        "credits": 3,
         "prerequisutes": "",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/PV175",
+        "additionalData": {
+          "rozsah": "1/2/0",
+          "garant": "E. Hladká",
+          "vyučující": "L. Dušek, L. Fázik"
+        }
       },
       {
         "faculty":"FI",
         "code": "PV276",
         "name": "Seminář simulace kyberútoků",
-        "garant": "J. Vykopal",
-        "vyučující": "J. Vykopal, P. Čeleda",
         "conclusion": "k",
-        "extend": "0/2/1",
-        "credits": "3 (plus ukončení)",
-        "semestr": "",
+        "credits": 3,
         "prerequisutes": "(PB156 && PV004) || SOUHLAS",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/PV276",
+        "additionalData": {
+          "rozsah": "0/2/1",
+          "garant": "J. Vykopal",
+          "vyučující": "J. Vykopal, P. Čeleda"
+        }
       },
       {
         "faculty":"FI",
         "code": "VB001",
         "name": "English Exam",
-        "garant": "E. Rudolfová",
-        "vyučující": "E. Rudolfová, M. Sekanina Vavřinová, Z. Vašíčková, A. Zita",
         "conclusion": "zk",
-        "extend": "0/0/0",
-        "credits": "1",
-        "semestr": "",
+        "credits": 1,
         "prerequisutes": "",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/VB001",
+        "additionalData": {
+          "rozsah": "0/0/0",
+          "garant": "E. Rudolfová",
+          "vyučující": "E. Rudolfová, M. Sekanina Vavřinová, Z. Vašíčková, A. Zita"
+        }
       },
       {
         "faculty":"FI",
         "code": "SB200",
         "name": "Bakalářská stáž - Kyberbezpečnost",
-        "garant": "J. Ráček",
-        "vyučující": "J. Ráček, L. Válová",
         "conclusion": "z",
-        "extend": "0/0/0 Stáž v minimálním extendu 12 týdnů.",
-        "credits": "20 (plus ukončení)",
-        "semestr": "",
+        "credits": 20,
         "prerequisutes": "(!rocnik(1) && !rocnik(2)) && SOUHLAS",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/SB200",
+        "additionalData": {
+          "rozsah": "0/0/0 Stáž v minimálním rozsahu 12 týdnů.",
+          "garant": "J. Ráček",
+          "vyučující": "J. Ráček, L. Válová"
+        }
       },
       {
         "faculty":"PrF",
         "code": "BI301K",
         "name": "Úvod do práva ICT II\n[ nevypisuje se v daném semestru: jaro 2024 ]",
-        "garant": "J. Míšek",
-        "vyučující": "J. Harašta, P. Loutocký, J. Míšek, M. Myška",
         "conclusion": "k",
-        "extend": "2/1/0",
-        "credits": "4",
-        "semestr": "",
+        "credits": 4,
         "prerequisutes": "!obor(PR) && !obor(PR01) && !program(N-VS)",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/law/BI301K",
+        "additionalData": {
+          "rozsah": "2/1/0",
+          "garant": "J. Míšek",
+          "vyučující": "J. Harašta, P. Loutocký, J. Míšek, M. Myška"
+        }
       },
       {
         "faculty":"PrF",
         "code": "BVV03K",
         "name": "Kyberkriminalita a kybernetická bezpečnost",
-        "garant": "R. Polčák",
-        "vyučující": "F. Kasl, P. Loutocký, J. Míšek, V. Stupka, J. Vostoupal",
         "conclusion": "k",
-        "extend": "0/2/0",
-        "credits": "3",
-        "semestr": "",
+        "credits": 3,
         "prerequisutes": "!obor(PR) && !obor(PR01) && !program(N-VS)",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/law/BVV03K",
+        "additionalData": {
+          "rozsah": "0/2/0",
+          "garant": "R. Polčák",
+          "vyučující": "F. Kasl, P. Loutocký, J. Míšek, V. Stupka, J. Vostoupal"
+        }
       },
       {
         "faculty":"FSS",
         "code": "BSSb1101",
         "name": "Úvod do bezpečnostních a strategických studií\n[ nevypisuje se v daném semestru: jaro 2024 ]",
-        "garant": "M. Mareš",
-        "vyučující": "V. Divišová, J. Kleiner, L. Konečná",
         "conclusion": "zk",
-        "extend": "1/1/0",
-        "credits": "6",
-        "semestr": "",
+        "credits": 6,
         "prerequisutes": "!BSS101 && !NOW(BSS101)",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fss/BSSb1101",
+        "additionalData": {
+          "rozsah": "1/1/0",
+          "garant": "M. Mareš",
+          "vyučující": "V. Divišová, J. Kleiner, L. Konečná"
+        }
       },
       {
         "faculty":"FSS",
         "code": "BSSb1103",
         "name": "Bezpečnostní politika ČR",
-        "garant": "M. Mareš",
-        "vyučující": "M. Mareš, P. Mlejnková",
         "conclusion": "zk",
-        "extend": "1/1/0",
-        "credits": "6",
-        "semestr": "",
+        "credits": 6,
         "prerequisutes": "!BSS103 && !NOW(BSS103)",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fss/BSSb1103",
+        "additionalData": {
+          "rozsah": "1/1/0",
+          "garant": "M. Mareš",
+          "vyučující": "M. Mareš, P. Mlejnková"
+        }
       },
       {
         "faculty":"FSS",
         "code": "BSSb1152",
         "name": "Kybernetická válka\n[ nevypisuje se v daném semestru: jaro 2024 ]",
-        "garant": "J. Kraus",
-        "vyučující": "J. Drmola, J. Kraus",
         "conclusion": "zk",
-        "extend": "2/0/0",
-        "credits": "4",
-        "semestr": "",
+        "credits": 4,
         "prerequisutes": "!BSS152 && !NOW(BSS152)",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fss/BSSb1152",
+        "additionalData": {
+          "rozsah": "2/0/0",
+          "garant": "J. Kraus",
+          "vyučující": "J. Drmola, J. Kraus"
+        }
       }
     ]
   },
@@ -411,40 +439,43 @@
         "faculty":"FI",
         "code": "PB029",
         "name": "Elektronická příprava dokumentů",
-        "garant": "P. Sojka",
-        "vyučující": "P. Sojka, V. Starý Novotný",
         "conclusion": "zk",
-        "extend": "2/1/0",
-        "credits": "3 (plus ukončení)",
-        "semestr": "",
+        "credits": 3,
         "prerequisutes": "",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/PB029",
+        "additionalData": {
+          "rozsah": "2/1/0",
+          "garant": "P. Sojka",
+          "vyučující": "P. Sojka, V. Starý Novotný"
+        }
       },
       {
         "faculty":"FI",
         "code": "VB000",
         "name": "Základy odborného stylu",
-        "garant": "A. Horák",
-        "vyučující": "H. Žižková, Z. Nevěřilová, M. Stará, P. Šmerk",
         "conclusion": "k",
-        "extend": "1/1/0",
-        "credits": "2 (plus ukončení)",
-        "semestr": "",
+        "credits": 2,
         "prerequisutes": "NOW(SBAPR) || (1422:BI1000Z)",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/VB000",
+        "additionalData": {
+          "rozsah": "1/1/0",
+          "garant": "A. Horák",
+          "vyučující": "H. Žižková, Z. Nevěřilová, M. Stará, P. Šmerk"
+        }
       },
       {
         "faculty":"FI",
         "code": "VB000Eng",
         "name": "Introduction to Academic Writing",
-        "garant": "E. Rudolfová",
-        "vyučující": "A. Zita",
         "conclusion": "k",
-        "extend": "1/1/0",
-        "credits": "2 (plus ukončení)",
-        "semestr": "",
+        "credits": 2,
         "prerequisutes": "NOW(SBAPR)",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/VB000Eng",
+        "additionalData": {
+          "rozsah": "1/1/0",
+          "garant": "E. Rudolfová",
+          "vyučující": "A. Zita"
+        }
       }
     ],
     "nameBald": "Sazba a akademické psaní",
@@ -459,40 +490,43 @@
         "faculty":"FI",
         "code": "PB112",
         "name": "Základy objektově orientovaného programování v jazyce Java",
-        "garant": "R. Ošlejšek",
-        "vyučující": "R. Ošlejšek, T. Pitner, J. Plhák",
         "conclusion": "zk",
-        "extend": "2/2/0",
-        "credits": "3 (plus ukončení)",
-        "semestr": "",
+        "credits": 3,
         "prerequisutes": "!(PB162) && ! NOW(PB162)",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/PB112",
+        "additionalData": {
+          "rozsah": "2/2/0",
+          "garant": "R. Ošlejšek",
+          "vyučující": "R. Ošlejšek, T. Pitner, J. Plhák"
+        }
       },
       {
         "faculty":"FI",
         "code": "PB161",
         "name": "Programování v jazyce C++",
-        "garant": "N. Beneš",
-        "vyučující": "N. Beneš, P. Ročkai",
         "conclusion": "zk",
-        "extend": "2/2/0",
-        "credits": "3 (plus ukončení)",
-        "semestr": "",
+        "credits": 3,
         "prerequisutes": "PB006",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/PB161",
+        "additionalData": {
+          "rozsah": "2/2/0",
+          "garant": "N. Beneš",
+          "vyučující": "N. Beneš, P. Ročkai"
+        }
       },
       {
         "faculty":"FI",
         "code": "PB162",
         "name": "Programování v jazyce Java",
-        "garant": "T. Pitner",
-        "vyučující": "T. Pitner, R. Ošlejšek",
         "conclusion": "zk",
-        "extend": "2/2/0",
-        "credits": "3 (plus ukončení)",
-        "semestr": "",
+        "credits": 3,
         "prerequisutes": "PB006 && ! PB112 && ! NOW(PB112)",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/PB162",
+        "additionalData": {
+          "rozsah": "2/2/0",
+          "garant": "T. Pitner",
+          "vyučující": "T. Pitner, R. Ošlejšek"
+        }
       }
     ],
     "nameBald": "Programování",
@@ -507,27 +541,29 @@
         "faculty":"FI",
         "code": "PV017",
         "name": "Řízení informační bezpečnosti",
-        "garant": "V. Matyáš",
-        "vyučující": "P. Loutocký, K. Malinka, V. Matyáš",
         "conclusion": "zk",
-        "extend": "1/0/0",
-        "credits": "1 (plus ukončení)",
-        "semestr": "",
+        "credits": 1,
         "prerequisutes": "",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/PV017",
+        "additionalData": {
+          "rozsah": "1/0/0",
+          "garant": "V. Matyáš",
+          "vyučující": "P. Loutocký, K. Malinka, V. Matyáš"
+        }
       },
       {
         "faculty":"FI",
         "code": "PV210",
         "name": "Kyberbezpečnost v organizaci",
-        "garant": "J. Vykopal",
-        "vyučující": "J. Vykopal, M. Laštovička, P. Čeleda",
         "conclusion": "k",
-        "extend": "2/0/2",
-        "credits": "3 (plus ukončení)",
-        "semestr": "",
+        "credits": 3,
         "prerequisutes": "PV080",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/PV210",
+        "additionalData": {
+          "rozsah": "2/0/2",
+          "garant": "J. Vykopal",
+          "vyučující": "J. Vykopal, M. Laštovička, P. Čeleda"
+        }
       }
     ],
     "nameBald": "Kyberbezpečnost",
@@ -542,40 +578,43 @@
         "faculty":"FI",
         "code": "VB035",
         "name": "English I",
-        "garant": "E. Rudolfová",
-        "vyučující": "I. Tulajová, L. Procházková, E. Rudolfová, M. Sekanina Vavřinová, A. Zita",
         "conclusion": "z",
-        "extend": "0/2/0",
-        "credits": "1",
-        "semestr": "",
+        "credits": 1,
         "prerequisutes": "",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/VB035",
+        "additionalData": {
+          "rozsah": "0/2/0",
+          "garant": "E. Rudolfová",
+          "vyučující": "I. Tulajová, L. Procházková, E. Rudolfová, M. Sekanina Vavřinová, A. Zita"
+        }
       },
       {
         "faculty":"FI",
         "code": "VB036",
         "name": "English II",
-        "garant": "E. Rudolfová",
-        "vyučující": "E. Rudolfová, M. Sekanina Vavřinová, A. Zita",
         "conclusion": "z",
-        "extend": "0/2/0",
-        "credits": "2",
-        "semestr": "",
+        "credits": 2,
         "prerequisutes": "VB035 || souhlas",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/VB036",
+        "additionalData": {
+          "rozsah": "0/2/0",
+          "garant": "E. Rudolfová",
+          "vyučující": "E. Rudolfová, M. Sekanina Vavřinová, A. Zita"
+        }
       },
       {
         "faculty":"FI",
         "code": "VV064",
         "name": "Academic and Professional Skills in English for IT",
-        "garant": "E. Rudolfová",
-        "vyučující": "A. Zita",
         "conclusion": "zk",
-        "extend": "0/2/0",
-        "credits": "2 (plus ukončení)",
-        "semestr": "",
+        "credits": 2,
         "prerequisutes": "VB001 || program(N-UCI)",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/VV064",
+        "additionalData": {
+          "rozsah": "0/2/0",
+          "garant": "E. Rudolfová",
+          "vyučující": "A. Zita"
+        }
       }
     ],
     "nameBald": "Angličtina",
@@ -590,27 +629,29 @@
         "faculty":"FI",
         "code": "SBPrip",
         "name": "Opakování před SBZZ",
-        "garant": "J. Barnat",
-        "vyučující": "J. Barnat",
         "conclusion": "z",
-        "extend": "0/0/1",
-        "credits": "1 (plus ukončení)",
-        "semestr": "",
+        "credits": 1,
         "prerequisutes": "NOW(SZB)",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/SBPrip",
+        "additionalData": {
+          "rozsah": "0/0/1",
+          "garant": "J. Barnat",
+          "vyučující": "J. Barnat"
+        }
       },
       {
         "faculty":"FI",
         "code": "SBAPR",
         "name": "Bakalářská práce",
-        "garant": "D. Svoboda",
-        "vyučující": "D. Svoboda\n[ hodnotí všichni vyučující pracoviště ]",
         "conclusion": "z",
-        "extend": "0/0/0",
-        "credits": "10 (max 10 kred)",
-        "semestr": "",
+        "credits": 10,
         "prerequisutes": "",
-        "poznámka": ""
+        "link":"https://is.muni.cz/predmet/fi/SBAPR",
+        "additionalData": {
+          "rozsah": "0/0/0",
+          "garant": "D. Svoboda",
+          "vyučující": "D. Svoboda\n[ hodnotí všichni vyučující pracoviště ]"
+        }
       }
     ]
   }
