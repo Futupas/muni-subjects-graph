@@ -321,17 +321,35 @@ function draw(data) {
                         el.classList.add('invisible');
                     }
 
-                    function parseNode(subjectCode) {
-                        const subject = data[subjectCode];
-                        subject.div.classList.remove('invisible');
-                        for (const prerequisite of subject.prerequisitesArray) {
-                            document.querySelector(`#main > div.line[data-from="${prerequisite}"][data-to="${subjectCode}"]`).classList.remove('invisible');
-                            parseNode(prerequisite);
+                    // Prerequisutes
+                    {
+                        function parseNode(subjectCode) {
+                            const subject = data[subjectCode];
+                            subject.div.classList.remove('invisible');
+                            for (const prerequisite of subject.prerequisitesArray) {
+                                document.querySelector(`#main > div.line[data-from="${prerequisite}"][data-to="${subjectCode}"]`).classList.remove('invisible');
+                                parseNode(prerequisite);
+                            }
                         }
+    
+                        parseNode(subject.code);
                     }
 
-                    parseNode(subject.code);
-
+                    // Is prerequisite for
+                    {
+                        function parseNode(subjectCode) {
+                            const el = data[subjectCode];
+                            el.div.classList.remove('invisible');
+                            const lines = Array.from(document.querySelectorAll(`#main > div.line[data-from="${subjectCode}"]`));
+                            for (const line of lines) {
+                                line.classList.remove('invisible');
+                                const newCode = line.getAttribute('data-to');
+                                parseNode(newCode);
+                            }
+                        }
+                        
+                        parseNode(div.subject.code);
+                    }
                 }
                 div.onmouseleave = _ => {
                     for (const el of Array.from(document.querySelectorAll('#main > div'))) {
@@ -340,7 +358,7 @@ function draw(data) {
                 }
 
                 for(const prerequisiteCode of subject.prerequisitesArray) {
-                    drawLine(subject, prerequisiteCode, ''); //todo something better
+                    drawLine(subject, prerequisiteCode, '');
                 }
 
                 main.appendChild(div);
