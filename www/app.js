@@ -270,6 +270,8 @@ function draw(data) {
         div.style.transform = `rotate(${rotate}rad)`;
         div.style.left = x1 + 'px';
         div.style.top = y1 + 'px';
+        div.setAttribute('data-from', prerequisiteCode);
+        div.setAttribute('data-to', subject.code);
 
         const span = document.createElement('span');
         span.innerText = text;
@@ -312,6 +314,30 @@ function draw(data) {
 
                 subject.x = x;
                 subject.y = y;
+
+                div.onmouseenter = _ => {
+                    for (const el of Array.from(document.querySelectorAll('#main > div'))) {
+                        if (el === div) continue;
+                        el.classList.add('invisible');
+                    }
+
+                    function parseNode(subjectCode) {
+                        const subject = data[subjectCode];
+                        subject.div.classList.remove('invisible');
+                        for (const prerequisite of subject.prerequisitesArray) {
+                            document.querySelector(`#main > div.line[data-from="${prerequisite}"][data-to="${subjectCode}"]`).classList.remove('invisible');
+                            parseNode(prerequisite);
+                        }
+                    }
+
+                    parseNode(subject.code);
+
+                }
+                div.onmouseleave = _ => {
+                    for (const el of Array.from(document.querySelectorAll('#main > div'))) {
+                        el.classList.remove('invisible');
+                    }
+                }
 
                 for(const prerequisiteCode of subject.prerequisitesArray) {
                     drawLine(subject, prerequisiteCode, ''); //todo something better
