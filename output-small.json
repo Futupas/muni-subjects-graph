@@ -19,17 +19,39 @@
             "code": "PV080",
             "name": "Information security and cryptography",
             "credits": 3,
-            "rozsah": "2\/2",
-            "link": "https://is.muni.cz/predmet/fi/PV080"
+            "link": "https://is.muni.cz/predmet/fi/PV080",
+            "additionalData": {
+                "kód": "MB141",
+                "název": "Základy programování",
+                "garant": "N. Beneš",
+                "vyučující": "N. Beneš",
+                "ukon.": "zk",
+                "rozsah": "2/2/2",
+                "kred.": "5 (plus ukončení)",
+                "semestr": "",
+                "prerekvizity": "!IB113 && !NOW(IB113)",
+                "poznámka": ""
+            }
         },
         {
             "faculty": "PrF",
             "code": "BI301K",
             "name": "Úvod do práva ICT II",
             "credits": 4,
-            "rozsah": "2\/1\/0",
             "prerequisutes": "!obor(PR) && !obor(PR01) && !program(N-VS)",
-            "link": "https://is.muni.cz/predmet/law/BI301K"
+            "link": "https://is.muni.cz/predmet/law/BI301K",
+            "additionalData": {
+                "kód": "MB141",
+                "název": "Úvod do programování a algoritmizace II",
+                "garant": "I. Černá",
+                "vyučující": "I. Černá",
+                "ukon.": "zk",
+                "rozsah": "2/1/0",
+                "kred.": "3 (plus ukončení)",
+                "semestr": "",
+                "prerekvizity": "(IB111 || IB113) && !IB002 && !NOW(IB002)",
+                "poznámka": ""
+            }
         },
         {
             "group": 1,
@@ -37,9 +59,20 @@
             "code": "PB112",
             "name": "Základy objektově orientovaného programování v jazyce Java",
             "credits": 3,
-            "rozsah": "2\/2\/0",
             "prerequisutes": "!(PB162) && ! NOW(PB162)",
-            "link": "https://is.muni.cz/predmet/fi/PB112"
+            "link": "https://is.muni.cz/predmet/fi/PB112",
+            "additionalData": {
+                "kód": "MB141",
+                "název": "Základy programování",
+                "garant": "N. Beneš",
+                "vyučující": "N. Beneš",
+                "ukon.": "zk",
+                "rozsah": "2/2/2",
+                "kred.": "5 (plus ukončení)",
+                "semestr": "",
+                "prerekvizity": "!IB113 && !NOW(IB113)",
+                "poznámka": ""
+            }
         }
     ]
 }
