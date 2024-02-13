@@ -1,5 +1,5 @@
 * {
-
+    box-sizing: border-box;
 }
 
 #main {
@@ -8,12 +8,15 @@
 
 .subject {
     position: absolute;
-    display: inline-block;
+    display: flex;
     border: 1px solid black;
     width: 200px;
     height: 100px;
     z-index: 2;
     background-color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
 }
 
 .line {
@@ -32,4 +35,8 @@
 .line > span {
     background-color:white;
     padding: 0px 5px;
+}
+
+.invisible {
+    visibility: hidden;
 }

@@ -165,10 +165,8 @@ function prepareData(data) {
     // Normalize graph a lil bit (remove leave AND?OR nodes)
     {
         const problemNodes = Object.keys(data).filter(x => data[x].modifier && !data[x].prerequisitesArray.length);
-        console.log(problemNodes);
         let currentNodeKey = problemNodes.length && problemNodes[0];
         while (currentNodeKey) {
-            console.log(problemNodes);
             delete data[currentNodeKey];
             problemNodes.splice(0, 1);
             
@@ -178,7 +176,6 @@ function prepareData(data) {
                 return { x, index };
             })
             .filter(x => x.index !== -1);
-            console.log(newNodes);
 
             for (const newNode of newNodes) {
                 newNode.x.prerequisitesArray.splice(newNode.index, 1);
@@ -207,8 +204,6 @@ function prepareData(data) {
                     // Object.values(data), 
                     Object.values(data).filter(x => !alreadyDone.find(y => y === x.code))
                 );
-                console.log(alreadyDone.map(x => data[x]));
-                console.log(Object.values(data).filter(x => !alreadyDone.find(y => y === x.code)));
                 break;
             }
 
@@ -246,8 +241,6 @@ function prepareData(data) {
             group++;
         }
     }
-
-    console.log(data);
 
     return data;
 }
@@ -299,10 +292,13 @@ function draw(data) {
                 const subject = subjectsInLayer[i];
                 const div = document.createElement('div');
                 div.classList.add('subject');
-                div.innerText = subject.code;
-
-                if (subject.name) {
-                    div.innerText += '\n' + subject.name;
+                
+                if (subject.modifier) {
+                    div.innerText = subject.name.toUpperCase();
+                    div.style.borderColor = 'blue';
+                }
+                else if (subject.name) {
+                    div.innerText = subject.code + '\n' + subject.name;
                 }
 
                 div.subject = subject;
@@ -331,4 +327,6 @@ function draw(data) {
 }
 
 const data = prepareData(DATA);
+console.log(data);
 draw(data);
+console.log('success');
