@@ -293,6 +293,7 @@ function draw(data) {
             for (let i = 0; i < subjectsInLayer.length; i++) {
                 const subject = subjectsInLayer[i];
                 const div = document.createElement('div');
+                div.setAttribute('code', subject.code);
                 div.classList.add('subject');
                 
                 if (subject.modifier) {
