@@ -101,6 +101,8 @@ function prepareData(data) {
             const prerequisiteSubject = data[prerequisite];
             if (!prerequisiteSubject) continue; // SOUHLAS etc
 
+            //prerequisiteSubject.isPrerequisiteFor is just for look to. Dont use it to draw a graph
+
             if (!prerequisiteSubject.isPrerequisiteFor) {
                 prerequisiteSubject.isPrerequisiteFor = [ code ];
             } else if (!prerequisiteSubject.isPrerequisiteFor.find(x => x === code)) {
@@ -118,6 +120,46 @@ function prepareData(data) {
         }
     }
 
+    // Make and/or graph ()
+    {
+        let currentNodeId = 0;
+        function parseNode(node, parent, codeToAvoid) {
+            if (!node) {
+                console.warn('Undefined node');
+                return;
+            }
+
+            if (node.modifier) {
+                node.code = node.modifier + '_' + (++currentNodeId);
+                node.name = node.modifier;
+
+                data[node.code] = node;
+                node.prerequisitesArray = [];
+                parent.prerequisitesArray.push(node.code);
+
+                for (const newNode of node.values) {
+                    parseNode(newNode, node, codeToAvoid);
+                }
+
+                return node;
+            } else if (node.code) {
+                // We remove NOTs to avoid circular dependency
+                if (node.not !== true && node.code !== codeToAvoid) {
+                    parent.prerequisitesArray.push(node.code);
+                }
+            } else {
+                console.warn('Unknown node', node);
+            }
+        }
+
+        var realSubjectsKeys = Object.keys(data);
+        for (const subjectKey of realSubjectsKeys) {
+            const subject = data[subjectKey];
+            subject.prerequisitesArray = []; // add 'isPrerequisiteFor
+            parseNode(subject.prerequisites, subject, subject.code);
+        }
+    }
+
     // Make layers
     {
         const alreadyDone = []; // The subjects we already have
@@ -126,13 +168,16 @@ function prepareData(data) {
         let currentLayer = 1;
         while (alreadyDone.length < subjectsCount) {
             const subjects = Object.values(data).filter(x => !alreadyDone.find(y => y === x.code) && isSmallArrayInBig(x.prerequisitesArray, alreadyDone));
+            // find all the subjects that depend on already found ones in this layer
 
             if (!subjects.length) {
                 console.error('stranger things...', 
                     alreadyDone.map(x => data[x]), 
-                    Object.values(data), 
+                    // Object.values(data), 
                     Object.values(data).filter(x => !alreadyDone.find(y => y === x.code))
                 );
+                console.log(alreadyDone.map(x => data[x]));
+                console.log(Object.values(data).filter(x => !alreadyDone.find(y => y === x.code)));
                 break;
             }
 
@@ -242,7 +287,7 @@ function draw(data) {
                 subject.y = y;
 
                 for(const prerequisiteCode of subject.prerequisitesArray) {
-                    drawLine(subject, prerequisiteCode, 'sdsd'); //todo something better
+                    drawLine(subject, prerequisiteCode, ''); //todo something better
                 }
 
                 main.appendChild(div);
