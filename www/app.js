@@ -120,7 +120,7 @@ function prepareData(data) {
         }
     }
 
-    // Make and/or graph ()
+    // Make and/or graph
     {
         let currentNodeId = 0;
         function parseNode(node, parent, codeToAvoid) {
@@ -137,8 +137,10 @@ function prepareData(data) {
                 node.prerequisitesArray = [];
                 parent.prerequisitesArray.push(node.code);
 
-                for (const newNode of node.values) {
-                    parseNode(newNode, node, codeToAvoid);
+                for (const childNode of node.values) {
+                    if (childNode.code !== codeToAvoid) {
+                        parseNode(childNode, node, codeToAvoid);
+                    }
                 }
 
                 return node;
@@ -157,6 +159,35 @@ function prepareData(data) {
             const subject = data[subjectKey];
             subject.prerequisitesArray = []; // add 'isPrerequisiteFor
             parseNode(subject.prerequisites, subject, subject.code);
+        }
+    }
+
+    // Normalize graph a lil bit (remove leave AND?OR nodes)
+    {
+        const problemNodes = Object.keys(data).filter(x => data[x].modifier && !data[x].prerequisitesArray.length);
+        console.log(problemNodes);
+        let currentNodeKey = problemNodes.length && problemNodes[0];
+        while (currentNodeKey) {
+            console.log(problemNodes);
+            delete data[currentNodeKey];
+            problemNodes.splice(0, 1);
+            
+            var newNodes = Object.values(data)
+            .map(x => {
+                const index = x.prerequisitesArray.findIndex(x => x === currentNodeKey);
+                return { x, index };
+            })
+            .filter(x => x.index !== -1);
+            console.log(newNodes);
+
+            for (const newNode of newNodes) {
+                newNode.x.prerequisitesArray.splice(newNode.index, 1);
+                if (newNode.x.modifier && !newNode.x.prerequisitesArray.length && !problemNodes.find(x => x === newNode.x.code)) {
+                    problemNodes.push(newNode.x.code);
+                }
+            }
+
+            currentNodeKey = currentNodeKey = problemNodes.length && problemNodes[0];
         }
     }
 
