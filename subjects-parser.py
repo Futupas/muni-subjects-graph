@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
+import json
 
 MUNI_URL = 'https://is.muni.cz/predmety/sablony_tisk?fakulta=1433;obdobi=9224;uzel=2592713;rek=a'
 
@@ -58,9 +59,9 @@ for index, element in enumerate(elements):
 
     # Construct block dictionary
     block = {
-        'name': block_name,
-        'tableEl': element,
-        'prevEl': prev_element,
+        # 'name': block_name,
+        # 'tableEl': element,
+        # 'prevEl': prev_element,
         'table': table,
         'nameBald': block_name_bold,
         'nameRegular': block_name_regular
@@ -68,3 +69,10 @@ for index, element in enumerate(elements):
     blocks.append(block)
 
 print(blocks)
+print()
+print()
+print()
+
+json_mylist = json.dumps(blocks, separators=(',', ':'))
+print(json_mylist)
+
