@@ -1,4 +1,4 @@
-from html.parser import HTMLParser
+# from html.parser import HTMLParser
 import urllib.request
 from bs4 import BeautifulSoup
 
@@ -8,32 +8,17 @@ opener = urllib.request.FancyURLopener({})
 f = opener.open(MUNI_URL)
 content = f.read()
 
-# print(content)
-
 # Parse the HTML content
 soup = BeautifulSoup(content, 'html.parser')
-
-# Find the table with class 'class1'
-# table = soup.find('table')
-# table = soup.find('div', class_='class1').find('table')
-
-
 main = soup.find('main', id='app_content')
-# ch1 = main.children
-# children = [child for child in main.children if child.name is not None]
-#
-# for child in ch1:
-#     print(child.name)
 
-print(len(list(main.children)))
+# Find all elements inside the main tag
+elements = main.find_all()
 
-for child in list(main.children):
-    # Check if the child is a tag (element)
-    print("Tag name:", child.name)
-    # if child.name is not None:
-    #     # Print the tag name
-    #     print("Tag name:", child.name)
+print(len(elements))
 
+for element in elements:
+    print("Tag name:", element.name)
 
 
 exit(0)
@@ -53,5 +38,3 @@ for p, table in sequences:
     print("Paragraph:", p.get_text())
     # print("Table:", table)
     print()
-
-
