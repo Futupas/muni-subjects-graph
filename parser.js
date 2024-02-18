@@ -7,7 +7,8 @@
         Array.from(document.querySelectorAll('#app_content > *'))
         .filter(x => (x.tagName === 'P' || x.tagName === 'TABLE' || x.tagName === 'FONT') && x.innerText);
 
-    console.log(elements);
+
+    const possiblePrerequisites = [];
 
     
     const blocks = [];
@@ -29,7 +30,12 @@
             const row = {};
             const cols = Array.from(trs[rowI].querySelectorAll('td')).map(x => x.innerText);
             for (let colI = 1; colI < columnNames.length; colI++) {
-                row[columnNames[colI]] = cols[colI];
+                const val = cols[colI];
+                row[columnNames[colI]] = val;
+
+                if (columnNames[colI] === 'prerekvizity' && (possiblePrerequisites.find(x => x === val) === undefined)) {
+                    possiblePrerequisites.push(val);
+                }
             }
             table.push(row);
         }
@@ -50,9 +56,9 @@
         }
 
         blocks.push(block);
-        
     }
 
+    console.log(possiblePrerequisites.join('\n'));
     console.log(blocks);
     console.log(JSON.stringify(blocks));
 
