@@ -59,6 +59,8 @@
     }
 
     console.log(possiblePrerequisites.join('\n'));
+    console.log(blocks);
+    console.log(JSON.stringify(blocks));
 
 }
 
